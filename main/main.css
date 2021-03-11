@@ -8,7 +8,7 @@ body {
     .header {
       padding: 80px;
       text-align: center;
-      background: #ffffff;
+      background: #e2e2e2;
       color: black;
     }
     /*Increase size of h1*/
@@ -23,7 +23,7 @@ body {
       box-sizing: border-box;
     }
     /*Columns container*/
-    .row {
+    .content {
       display: flex;
       flex-direction: column;
     }
