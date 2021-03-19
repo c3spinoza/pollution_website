@@ -1,54 +1,56 @@
+/*Global attributes*/
+/*fonts*/
 body {
-      /*Font of in body*/
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    /*Styling of header*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Proper sizing*/
+* {
+  box-sizing: border-box;
+}
 
-    /*Header ssection tyling*/
-    .header {
-      padding: 80px;
-      text-align: center;
-      background: #e2e2e2;
-      color: black;
-    }
-    /*Increase size of h1*/
-    .header h1 {
-      font-size: 40px;
-    }
+/*Styling of header*/
 
-    /*Content of main page*/
+/*Header section tyling*/
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #e2e2e2;
+  color: black;
+}
+/*Increase size of h1*/
+.header h1 {
+  font-size: 40px;
+}
 
-    /*Proper sizing*/
-    * {
-      box-sizing: border-box;
-    }
-    /*Columns container*/
-    .content {
-      display: flex;
-      flex-direction: column;
-    }
-    /*Context section styling*/
-    .context {
-      flex: 30%;
-      background-color: white;
-      padding: 20px;
-    }
-    /*Map section styling*/
-    .map {
-      flex: 70%;
-      background-color: #f1f1f1;
-      padding: 20px;
-    }
-    /*Map styling*/
-     map {
-      display: inline;
-     }
-    /*footer styling*/
-    .footer {
-    	padding: 20px;
-        text-align: center;
-        background: #ddd;
-    }
-    .footer p {
-        text-align: left;
-    }
+/*Content of main page*/
+
+/*Columns container*/
+.content {
+  display: flex;
+  flex-direction: column;
+}
+/*Context section styling*/
+.context {
+  flex: 30%;
+  background-color: white;
+  padding: 20px;
+}
+/*Map section styling*/
+.map {
+  flex: 70%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+/*Map styling*/
+map {
+  display: inline;
+}
+/*footer styling*/
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+.footer p {
+  text-align: left;
+}
