@@ -4,7 +4,7 @@ body {
     }
     /*Styling of header*/
 
-    /*Styling*/
+    /*Header ssection tyling*/
     .header {
       padding: 80px;
       text-align: center;
@@ -16,7 +16,7 @@ body {
       font-size: 40px;
     }
 
-    /*Content of website*/
+    /*Content of main page*/
 
     /*Proper sizing*/
     * {
@@ -27,19 +27,23 @@ body {
       display: flex;
       flex-direction: column;
     }
-    /*Main column*/
+    /*Context section styling*/
     .context {
       flex: 30%;
       background-color: white;
       padding: 20px;
     }
-    /*Side columns*/
+    /*Map section styling*/
     .map {
       flex: 70%;
       background-color: #f1f1f1;
       padding: 20px;
     }
-    /*Styling footer*/
+    /*Map styling*/
+     map {
+      display: inline;
+     }
+    /*footer styling*/
     .footer {
     	padding: 20px;
         text-align: center;
