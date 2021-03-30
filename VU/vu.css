@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
-*{
+* {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -24,7 +24,7 @@ body {
   background: #063146;
   user-select: none;
 }
-.sidebar ul a{
+.sidebar ul a {
   display: block;
   height: 100%;
   width: 100%;
@@ -37,22 +37,22 @@ body {
   border-top: 1px solid rgba(255,255,255,.1);
   transition: .4s;
 }
-ul li:hover a{
+ul li:hover a {
   padding-left: 50px;
 }
-.sidebar ul a i{
+.sidebar ul a i {
   margin-right: 16px;
 }
-#check{
+#check {
   display: none;
 }
-label #btn,label #cancel{
+label #btn,label #cancel {
   position: absolute;
   background: #042331;
   border-radius: 3px;
   cursor: pointer;
 }
-label #btn{
+label #btn {
   left: 40px;
   top: 25px;
   font-size: 35px;
@@ -60,7 +60,7 @@ label #btn{
   padding: 6px 12px;
   transition: all .5s;
 }
-label #cancel{
+label #cancel {
   z-index: 1111;
   left: -195px;
   top: 17px;
@@ -69,21 +69,21 @@ label #cancel{
   padding: 4px 9px;
   transition: all .5s ease;
 }
-#check:checked ~ .sidebar{
+#check:checked ~ .sidebar {
   left: 0;
 }
-#check:checked ~ label #btn{
+#check:checked ~ label #btn {
   left: 250px;
   opacity: 0;
   pointer-events: none;
 }
-#check:checked ~ label #cancel{
+#check:checked ~ label #cancel {
   left: 195px;
 }
-#check:checked ~ section{
+#check:checked ~ section {
   margin-left: 250px;
 }
-section{
+section {
   background: url(bg.jpeg) no-repeat;
   background-position: center;
   background-size: cover;
@@ -91,20 +91,21 @@ section{
   transition: all .5s;
 }
 .title {
-  margin-right: 190px; /* Same as the width of the sidenav /
+  margin-right: 190px;
+  /* Same as the width of the sidenav /
   font-size: 28px; / Increased text to enable scrolling */
   padding: 0px 10px;
 }
 
 .box {
-    border:1px solid white;
-    width:1050px;
-    overflow: scroll;
+  border: 1px solid white;
+  width: 1050px;
+  overflow: scroll;
 }
 
 h2 {
-    text-decoration: underline;
-    text-align: center
+  text-decoration: underline;
+  text-align: center
 }
 
 .centered {
@@ -112,46 +113,50 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color:black;
-  
+  color: black;
+
   font-size: 50px;
   text-align: center;
 }
 #hp {
-    float: left;
-    margin: 0 15px;
-    width: 390px;
-    height:290px;
-    vertical-align:left
+  float: left;
+  margin: 0 15px;
+  width: 390px;
+  height: 290px;
+  vertical-align: left
 }
 #hp2 {
-    float: right;
-    margin: 0 15px;
-    width: 330px;
-    height:230px;
-    vertical-align:right
+  float: right;
+  margin: 0 15px;
+  width: 330px;
+  height: 230px;
+  vertical-align: right
 }
 .text-box {
-     border:1px solid black;
-    width:1050px;
-    height:300px;
-    overflow: scroll;
+  border: 1px solid black;
+  width: 1050px;
+  height: 300px;
+  overflow: scroll;
 }
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
-*{
+* {
   box-sizing: border-box;
 }
- 
-.Location{
+
+.Location {
   position: relative;
   text-align: center;
   color: white;
 }
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
