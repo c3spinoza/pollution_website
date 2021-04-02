@@ -54,7 +54,7 @@ ul li:hover a {
   display: none;
 }
 /*Exit Button & Collpased Menus Square*/
-label #btn,label #cancel {
+label #open,label #exit {
   position: absolute;
   background: #042331;
   border-radius: 3px;
@@ -63,7 +63,7 @@ label #btn,label #cancel {
 /*Collapsed Menu*/
 
 /*Three Line Icon*/
-label #btn {
+label #open {
   left: 40px;
   top: 25px;
   font-size: 35px;
@@ -72,7 +72,7 @@ label #btn {
   transition: all .5s;
 }
 /*X in Exit Button*/
-label #cancel {
+label #exit {
   z-index: 1111;
   left: -195px;
   top: 17px;
@@ -86,13 +86,13 @@ label #cancel {
   left: 0;
 }
 /*Collpased Menu Icon when Menu is Opened*/
-#check:checked ~ label #btn {
+#check:checked ~ label #open {
   left: 150px;
   opacity: 0;
   pointer-events: none;
 }
 /*Position of Exit Button*/
-#check:checked ~ label #cancel {
+#check:checked ~ label #exit {
   left: 195px;
 }
 /*Position of Opened Menu*/
@@ -157,7 +157,7 @@ h2 {
   overflow: scroll;
 }
 .clearfix::after {
-  content: "";
+  /*content: "";*/
   clear: both;
   display: table;
 }
