@@ -1,4 +1,3 @@
-
 /*Font of the Body*/
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -130,18 +129,25 @@ section {
       display: flex;
       flex-direction: column;
     }
-    /*Main column*/
-    .context {
-      flex: 30%;
-      background-color: white;
-      padding: 20px;
-    }
-    /*Side columns*/
+    /*Mini Map*/
     .map {
       flex: 70%;
-      background-color: #f1f1f1;
+      background-color: #9e9e9e;
       padding: 20px;
     }
+    /*Information*/
+    .context {
+      flex: 30%;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+    /*Mission*/
+    .mission {
+      flex: 30%;
+      background-color: #9e9e9e;
+      padding: 20px;
+    }
+
     /*Styling footer*/
     .footer {
     	padding: 20px;
@@ -151,3 +157,5 @@ section {
     .footer p {
         text-align: left;
     }
+
+
