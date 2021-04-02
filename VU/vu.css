@@ -54,12 +54,13 @@ ul li:hover a {
   display: none;
 }
 /*Exit Button & Collpased Menus Square*/
-label #open,label #exit {
+label #open, label #exit {
   position: absolute;
   background: #042331;
   border-radius: 3px;
   cursor: pointer;
 }
+
 /*Collapsed Menu*/
 
 /*Three Line Icon*/
@@ -178,4 +179,3 @@ h2 {
     font-size: 18px;
   }
 }
-
