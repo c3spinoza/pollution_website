@@ -1,49 +1,86 @@
-body {
-  font-family: "Lato", sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
-
-.sidenav {
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* Sidebar section*/
+.sidebar { /*Sidebar section*/
   height: 100%;
-  width: 180px;
+  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
-  right: 0;
-  background-color: whitesmoke;
+  left: 0;
+  background-color: #111;
   overflow-x: hidden;
-  padding-top: 20px;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
+.sidebar a /*Sidebar spacing*/{
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: black;
+  color: #818181;
   display: block;
+  transition: 0.3s;
 }
 
-.sidenav a:hover {
+.sidebar a:hover {
   color: #f1f1f1;
 }
 
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn /*Open icon*/{
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 7px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main /*Top section where the sidebar icon is located */ {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+   /*End of sidebar section*/
 .title {
-  margin-right: 190px; /* Same as the width of the sidenav /
+  margin-left: 0px; /* Same as the width of the sidenav /
   font-size: 28px; / Increased text to enable scrolling */
   padding: 0px 10px;
 }
 
-.box {
+.box /* Box to ensure that nothing overflow */{
     border:1px solid white;
-    width:1050px;
+    width:auto;
     overflow: scroll;
+    box-sizing: border-box;
 }
 
-h2 {
+h2 /*The section names*/ {
     text-decoration: underline;
     text-align: center
 }
 
-.centered {
+.centered /*Location text in the middles of title picture*/ {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -53,14 +90,14 @@ h2 {
   font-size: 50px;
   text-align: center;
 }
-#hp {
+#hp /*The side pictures on the left*/  {
     float: left;
     margin: 0 15px;
     width: 390px;
     height:290px;
     vertical-align:left
 }
-#hp2 {
+#hp2 /*The side pictures on the right*/ {
     float: right;
     margin: 0 15px;
     width: 330px;
@@ -73,19 +110,17 @@ h2 {
     height:300px;
     overflow: scroll;
 }
-.clearfix::after {
+.clearfix:after {
   content: "";
   clear: both;
   display: table;
 }
-*{
-  box-sizing: border-box;
-}
  
-.Location{
+.Location{ /*Location title picture*/
   position: relative;
   text-align: center;
   color: white;
+ 
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
