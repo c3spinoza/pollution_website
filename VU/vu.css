@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
+
+/*Global Styling*/
 * {
   padding: 0;
   margin: 0;
@@ -6,9 +8,11 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+/*Body Font*/
 body {
   font-family: "Roboto", sans-serif;
 }
+
 /* Sidebar section*/
 .sidebar {
   /*Sidebar section*/
@@ -23,8 +27,8 @@ body {
   transition: 0.5s;
   padding-top: 60px;
 }
-
-.sidebar a /*Sidebar spacing*/ {
+/*Sidebar spacing*/ 
+.sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -32,7 +36,7 @@ body {
   display: block;
   transition: 0.3s;
 }
-
+/*Text Color Change Animation*/
 .sidebar a:hover {
   color: #f1f1f1;
 }
@@ -45,7 +49,10 @@ body {
   margin-left: 50px;
 }
 
-.openbtn /*Open icon*/ {
+/*Open Icon*/
+
+/**/
+.openbtn  {
   font-size: 20px;
   cursor: pointer;
   background-color: #111;
@@ -54,35 +61,39 @@ body {
   border: none;
   border-radius: 7px;
 }
-
+/*Background Color Change Animation*/
 .openbtn:hover {
   background-color: #444;
 }
-
-#main /*Top section where the sidebar icon is located */ {
+/*Top section where the sidebar icon is located */
+.main {
   transition: margin-left 0.5s;
   padding: 16px;
 }
-/*End of sidebar section*/
+/*End of sidebar section*/ /*No appearant use*/
 .title {
   margin-left: 0px; /* Same as the width of the sidenav /
   font-size: 28px; / Increased text to enable scrolling */
   padding: 0px 10px;
 }
 
-.box /* Box to ensure that nothing overflow */ {
+/*Content*/
+
+/* Box to ensure that nothing overflow */ 
+.box {
   border: 1px solid white;
   width: auto;
   overflow: scroll;
   box-sizing: border-box;
 }
-
-h2 /*The section names*/ {
+/*The section names*/ 
+h2 {
   text-decoration: underline;
   text-align: center;
 }
 
-.centered /*Location text in the middles of title picture*/ {
+/*Location text in the middles of title picture*/
+.centered  {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -92,19 +103,29 @@ h2 /*The section names*/ {
   font-size: 50px;
   text-align: center;
 }
-#hp /*The side pictures on the left*/ {
+/*The side pictures on the left*/
+#image2 {
   float: left;
   margin: 0 15px;
   width: 390px;
   height: 290px;
   vertical-align: left;
 }
-#hp2 /*The side pictures on the right*/ {
+/*The side pictures on the right*/ 
+#image3 {
   float: right;
   margin: 0 15px;
   width: 330px;
   height: 230px;
   vertical-align: right;
+}
+/*The side pictures on the left*/
+#image4 {
+  float: left;
+  margin: 0 15px;
+  width: 390px;
+  height: 290px;
+  vertical-align: left;
 }
 .text-box {
   border: 1px solid black;
