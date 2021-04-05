@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title> Location template </title>
-  <!-- HTML -->
- <link rel="stylesheet" href="style.css">
+  <title>Location Name</title>
+  <meta charset="UTF-8">
+  <!--Scaling of website by screen size-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- Side bar -->
-    <div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
 
-<div id="main">
-  <button class="openbtn" onclick="openNav()">☰ </button>  
-</div>
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ </button>
+  </div>
 
-<script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
   <!-- Box to ensure that nothing hids behind sidebar -->
- <div class="box">
-     <!-- Top Title (location name and picture) -->
-<section id="Location">
-    <div class="Location">
-   <img src="Audi_Brandplattform_Colours_Element-15.webp", alt="white" width=" 1025px" height="300px"  style= vertical-align:left;margin:0 5px;><!-- Picture of location -->
- <div class="centered">Location name </div> <!-- If you want to change the font,size,color or any other attributes do it in the css .centered section -->
-    </div></section>
-     <!-- The description and picture to the left of the description -->
-<section id="description">
-    <div class="clearfix"> <!-- This is to make sure that the picture and text are aligned -->
-        <img src="Audi_Brandplattform_Colours_Element-15.webp", alt="white"id="hp"> <!-- Another picture of location -->
-<div class id="text-box"> 
-   <h2> Description</h2> 
-    <p> A brief description of what the place is about and what is special about it</p>
-        </div></div>
-    </section> 
-   <!-- Location section of the website -->
-<section id="location">
-    <div class="clearfix">
-     <img src="Audi_Brandplattform_Colours_Element-15.webp", alt="white"id="hp2"> <!-- actual map of where it is located -->
-     <h2> Location</h2> 
-    <p> The location of the location</p>
-    </div>
+  <div class="box">
+    <!-- Top Title (location name and picture) -->
+    <section id="Location">
+      <div class="Location">
+        <img src="Audi_Brandplattform_Colours_Element-15.webp" , alt="white" width=" 1025px" height="300px" style=vertical-align:left;margin:0 5px;><!-- Picture of location -->
+        <div class="centered">Location name </div> <!-- If you want to change the font,size,color or any other attributes do it in the css .centered section -->
+      </div>
     </section>
-   <!-- The CO2 information  -->
-<section id ="CO2">
-    <div class="clearfix">
-         <img src="Audi_Brandplattform_Colours_Element-15.webp", alt="white"id="hp"> <!-- I am not sure what picture we can put in this one. perhaps graphs? -->
-   <h2> Carbon Dioxide levels</h2> 
-    <p> The CO2 levels over a course of time</p>
-    </div>
+    <!-- The description and picture to the left of the description -->
+    <section id="description">
+      <div class="clearfix">
+        <!-- This is to make sure that the picture and text are aligned -->
+        <img src="Audi_Brandplattform_Colours_Element-15.webp" , alt="white" id="hp"> <!-- Another picture of location -->
+        <div class id="text-box">
+          <h2> Description</h2>
+          <p> A brief description of what the place is about and what is special about it</p>
+        </div>
+      </div>
     </section>
-    
-    </div>
+    <!-- Location section of the website -->
+    <section id="location">
+      <div class="clearfix">
+        <img src="Audi_Brandplattform_Colours_Element-15.webp" , alt="white" id="hp2"> <!-- actual map of where it is located -->
+        <h2> Location</h2>
+        <p> The location of the location</p>
+      </div>
+    </section>
+    <!-- The CO2 information  -->
+    <section id="CO2">
+      <div class="clearfix">
+        <img src="Audi_Brandplattform_Colours_Element-15.webp" , alt="white" id="hp"> <!-- I am not sure what picture we can put in this one. perhaps graphs? -->
+        <h2> Carbon Dioxide levels</h2>
+        <p> The CO2 levels over a course of time</p>
+      </div>
+    </section>
+  </div>
 </body>
-</html> 
+</html>
