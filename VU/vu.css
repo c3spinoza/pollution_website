@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
-*{
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
+* {
   padding: 0;
   margin: 0;
   list-style: none;
   text-decoration: none;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* Sidebar section*/
-.sidebar { /*Sidebar section*/
+.sidebar {
+  /*Sidebar section*/
   height: 100%;
   width: 0;
   position: fixed;
@@ -22,7 +23,7 @@ body {
   padding-top: 60px;
 }
 
-.sidebar a /*Sidebar spacing*/{
+.sidebar a /*Sidebar spacing*/ {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -43,7 +44,7 @@ body {
   margin-left: 50px;
 }
 
-.openbtn /*Open icon*/{
+.openbtn /*Open icon*/ {
   font-size: 20px;
   cursor: pointer;
   background-color: #111;
@@ -58,26 +59,26 @@ body {
 }
 
 #main /*Top section where the sidebar icon is located */ {
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 16px;
 }
-   /*End of sidebar section*/
+/*End of sidebar section*/
 .title {
   margin-left: 0px; /* Same as the width of the sidenav /
   font-size: 28px; / Increased text to enable scrolling */
   padding: 0px 10px;
 }
 
-.box /* Box to ensure that nothing overflow */{
-    border:1px solid white;
-    width:auto;
-    overflow: scroll;
-    box-sizing: border-box;
+.box /* Box to ensure that nothing overflow */ {
+  border: 1px solid white;
+  width: auto;
+  overflow: scroll;
+  box-sizing: border-box;
 }
 
 h2 /*The section names*/ {
-    text-decoration: underline;
-    text-align: center
+  text-decoration: underline;
+  text-align: center;
 }
 
 .centered /*Location text in the middles of title picture*/ {
@@ -85,44 +86,48 @@ h2 /*The section names*/ {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color:black;
-  
+  color: black;
+
   font-size: 50px;
   text-align: center;
 }
-#hp /*The side pictures on the left*/  {
-    float: left;
-    margin: 0 15px;
-    width: 390px;
-    height:290px;
-    vertical-align:left
+#hp /*The side pictures on the left*/ {
+  float: left;
+  margin: 0 15px;
+  width: 390px;
+  height: 290px;
+  vertical-align: left;
 }
 #hp2 /*The side pictures on the right*/ {
-    float: right;
-    margin: 0 15px;
-    width: 330px;
-    height:230px;
-    vertical-align:right
+  float: right;
+  margin: 0 15px;
+  width: 330px;
+  height: 230px;
+  vertical-align: right;
 }
 .text-box {
-     border:1px solid black;
-    width:1050px;
-    height:300px;
-    overflow: scroll;
+  border: 1px solid black;
+  width: 1050px;
+  height: 300px;
+  overflow: scroll;
 }
 .clearfix:after {
   content: "";
   clear: both;
   display: table;
 }
- 
-.Location{ /*Location title picture*/
+
+.Location {
+  /*Location title picture*/
   position: relative;
   text-align: center;
   color: white;
- 
 }
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
