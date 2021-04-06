@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <title>Location Name</title>
   <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--Stylesheet -->
   <link rel="stylesheet" href="style.css">
   <!--Bootstrap CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
-  
-
 <body>
   <!-- Opened Side Bar -->
   <div id="mySidebar" class="sidebar">
@@ -30,43 +27,48 @@
     <button class="openbtn" onclick="openNav()">☰ </button>
   </div>
 
-  <!-- Box to ensure that nothing hids behind sidebar -->
-  <div class="box">
-    
-    
-    <!-- Top Title (location name and picture) -->
-  <div class="Location">
-        <img src="image1.jpg" , alt="image1" width=" 1025px" height="300px" style=vertical-align:left;margin:0 5px;><!-- Picture of location -->
-        <div class="centered">Location name           </div> <!-- If you want to change the font,size,color or any other attributes do it in the css .centered section -->
-      </div>
-    
-    <!-- The description and picture to the left of the description -->
-    <section id="description">
-      <div class="clearfix">
-        <!-- This is to make sure that the picture and text are aligned -->
-        <img src="image2.jpg" , alt="image2" id="image2"> <!-- Another picture of location -->
-        <div class="text-box">
-          <h2> Description</h2>
-          <p> A brief description of what the place is about and what is special about it</p>
-        </div>
-      </div>
-    </section>
-    <!-- Location section of the website -->
-    <section id="location">
-      <div class="clearfix">
-        <img src="image3.jpg" , alt="image3" id="image3"> <!-- actual map of where it is located -->
-        <h2> Location</h2>
-        <p> The location of the location</p>
-      </div>
-    </section>
-    <!-- The CO2 information  -->
-    <section id="CO2">
-      <div class="clearfix">
-        <img src="image4.jpg" , alt="image4" id="image4"> <!-- I am not sure what picture we can put in this one. perhaps graphs? -->
-        <h2> Carbon Dioxide levels</h2>
-        <p> The CO2 levels over a course of time</p>
-      </div>
-    </section>
+  <!--Header-->
+  <div class="header">
+    <!--Name of Location-->
+    <div class="location">
+      Location name
+    </div>
+    <!--Background of Header -->
+    <img src="image1.jpg"  alt="image1" width=" 1025px" height="300px">
+  </div>
+  <!--Mini-Map-->
+  <div class="minimap">
+    <img src="image2.jpg" alt="image2" id="image2">
+  </div>
+  <!--Information Section-->
+  <div class="information">
+    <!--Section 1-->
+    <div class="section1">
+      <h3> Section 1</h3>
+      <p>
+        A brief description of what the place is about and what is special about it
+      </p>
+      <img src="image3.jpg" alt="image3" id="image3">
+    </div>
+    <!--Section 2-->
+    <div class="section2">
+      <h3>Section 2</h3>
+      <p> 
+        The CO2 levels over the course of time.
+      </p>
+      <img src="image4.jpg" alt="image4" id="image4">
+    </div>
+  </div>
+  <!--Mission-->
+  <div class="mission">
+    <h3>Mission </h3>
+      <p> 
+        The _____ levels over the course of time.
+      </p>
+  </div>
+  <!--Footer-->
+  <div class="footer">
+    ...
   </div>
   <!--Bootstrap JS-->
   <!-- <script></script> -->
