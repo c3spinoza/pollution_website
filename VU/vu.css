@@ -79,72 +79,58 @@ body {
 
 /*Content*/
 
-/* Box to ensure that nothing overflow */ 
-.box {
-  border: 1px solid white;
-  width: auto;
-  overflow: scroll;
-  box-sizing: border-box;
-}
-/*The section names*/ 
-h2 {
-  text-decoration: underline;
-  text-align: center;
-}
-
-/*Location text in the middles of title picture*/
-.centered  {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/*Header*/
+.location {
   color: black;
-
   font-size: 50px;
   text-align: center;
 }
-/*The side pictures on the left*/
+#image1 {
+  padding: 10px;
+  vertical-align:left;
+  margin:0 5px;
+}
+/*Mini-Map*/ 
+.minimap {
+  padding: 10px;
+  text-align: left;
+  background: white;
+  color: black;
+}
 #image2 {
-  float: left;
-  margin: 0 15px;
-  width: 390px;
-  height: 290px;
-  vertical-align: left;
+  vertical-align:left;
+  margin:0 5px;
 }
-/*The side pictures on the right*/ 
+/*Information*/ 
+.information {
+  padding: 10px;
+  text-align: left;
+  background: white;
+  color: black;
+}
 #image3 {
-  float: right;
-  margin: 0 15px;
-  width: 330px;
-  height: 230px;
-  vertical-align: right;
+  vertical-align:left;
+  margin:0 5px;
 }
-/*The side pictures on the left*/
 #image4 {
-  float: left;
-  margin: 0 15px;
-  width: 390px;
-  height: 290px;
-  vertical-align: left;
+  vertical-align:left;
+  margin:0 5px;
 }
-.text-box {
-  border: 1px solid black;
-  width: 1050px;
-  height: 300px;
-  overflow: scroll;
+/*Mission*/ 
+.mission {
+  padding: 10px;
+  text-align: left;
+  background: white;
+  color: black;
 }
-.clearfix:after {
-  content: "";
-  clear: both;
-  display: table;
+/*Footer*/ 
+.footer {
+  padding: 20px;
+  text-align: left;
+  background: white;
+  color: black;
 }
 
-.Location {
-  /*Location title picture*/
-  position: relative;
-  text-align: center;
-  color: white;
-}
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
