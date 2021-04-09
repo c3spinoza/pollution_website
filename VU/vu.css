@@ -12,7 +12,11 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-
+/* Sidebar section*/
+.wrapper {
+    display: flex;
+    width: 100%;
+}
 /* Sidebar section*/
 .sidebar {
   /*Sidebar section*/
@@ -27,7 +31,7 @@ body {
   transition: 0.5s;
   padding-top: 60px;
 }
-/*Sidebar spacing*/ 
+/*Stylign of Sidebar Options*/ 
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -36,12 +40,12 @@ body {
   display: block;
   transition: 0.3s;
 }
-/*Text Color Change Animation*/
+/*Text Color Change Animation of Options*/
 .sidebar a:hover {
   color: #f1f1f1;
 }
 
-.sidebar .closebtn {
+.sidebar .bi-x {
   position: absolute;
   top: 0;
   right: 25px;
@@ -51,30 +55,22 @@ body {
 
 /*Open Icon*/
 
-/**/
-.openbtn  {
+/*Styling of Opening Icon*/
+.bi-list  {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
   color: white;
-  padding: 10px 15px;
   border: none;
-  border-radius: 7px;
+  
 }
 /*Background Color Change Animation*/
-.openbtn:hover {
+.btn:hover {
   background-color: #444;
 }
 /*Top section where the sidebar icon is located */
 .main {
   transition: margin-left 0.5s;
   padding: 16px;
-}
-/*End of sidebar section*/ /*No appearant use*/
-.title {
-  margin-left: 0px; /* Same as the width of the sidenav /
-  font-size: 28px; / Increased text to enable scrolling */
-  padding: 0px 10px;
 }
 /*Responsive Part of Sidebar*/
 @media screen and (max-height: 450px) {
