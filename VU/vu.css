@@ -76,61 +76,7 @@ body {
   font-size: 28px; / Increased text to enable scrolling */
   padding: 0px 10px;
 }
-
-/*Content*/
-
-/*Header*/
-.location {
-  color: black;
-  font-size: 50px;
-  text-align: center;
-}
-#image1 {
-  padding: 10px;
-  vertical-align:left;
-  margin:0 5px;
-}
-/*Mini-Map*/ 
-.minimap {
-  padding: 10px;
-  text-align: left;
-  background: white;
-  color: black;
-}
-#image2 {
-  vertical-align:left;
-  margin:0 5px;
-}
-/*Information*/ 
-.information {
-  padding: 10px;
-  text-align: left;
-  background: white;
-  color: black;
-}
-#image3 {
-  vertical-align:left;
-  margin:0 5px;
-}
-#image4 {
-  vertical-align:left;
-  margin:0 5px;
-}
-/*Mission*/ 
-.mission {
-  padding: 10px;
-  text-align: left;
-  background: white;
-  color: black;
-}
-/*Footer*/ 
-.footer {
-  padding: 20px;
-  text-align: left;
-  background: white;
-  color: black;
-}
-
+/*Responsive Part of Sidebar*/
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
