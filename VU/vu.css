@@ -1,93 +1,38 @@
-body {
-  font-family: "Lato", sans-serif;
-}
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
 
-.sidenav {
-  height: 100%;
-  width: 180px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: whitesmoke;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
+/*Global Styling*/
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.title {
-  margin-right: 190px; /* Same as the width of the sidenav /
-  font-size: 28px; / Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-.box {
-    border:1px solid white;
-    width:1050px;
-    overflow: scroll;
-}
-
-h2 {
-    text-decoration: underline;
-    text-align: center
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color:black;
-  
-  font-size: 50px;
-  text-align: center;
-}
-#hp {
-    float: left;
-    margin: 0 15px;
-    width: 390px;
-    height:290px;
-    vertical-align:left
-}
-#hp2 {
-    float: right;
-    margin: 0 15px;
-    width: 330px;
-    height:230px;
-    vertical-align:right
-}
-.text-box {
-     border:1px solid black;
-    width:1050px;
-    height:300px;
-    overflow: scroll;
-}
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-*{
   box-sizing: border-box;
 }
- 
-.Location{
-  position: relative;
-  text-align: center;
-  color: white;
+
+/*Body Font*/
+body #fullSidebar #fullNavbar {
+  font-family: "Roboto", sans-serif;
 }
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+
+/*Navbar and Sidebar */
+.navbar-custom {
+  background-color: #010101;
+  color: #a8a8a8;
+}
+/*Sidebar Toggler Color*/
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(204,204,204, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/*Sidebar Options*/
+#fullSidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #a8a8a8;
+  display: block;
+  transition: 0.3s;
+}
+/*Text Color Change Animation of Options Bootstrap*/
+#fullSidebar a:hover {
+  color: #f1f1f1;
 }

@@ -1,52 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title> Location template </title>
-  <!-- HTML -->
- <link rel="stylesheet" href="style.css">
+  <title>Location Name</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
 </head>
+
 <body>
-  <!-- Side bar -->
-<div class="sidenav">
-  <a href="#location">Location #1</a>
-  <a href="#location">Location #2</a>
-  <a href="#location">Location #3</a>
-  <a href="#location">Location #4</a>
+  <!--Navagation Bar-->
+  <nav class="navbar navbar-custom" id="fullNavbar">
+    <div class="container-fluid">
+      <!--Navbar Brand-->
+      <span class="navbar-brand mb-0 h1">Nashville Pollution</span>
+      <!--Opening Icon/Button-->
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fullSidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
-  <!-- Box to ensure that nothing hids behind sidebar -->
- <div class="box">
-     <!-- Top Title (location name and picture) -->
-<section id="Location">
-    <div class="Location">
-   <img src="Audi_Brandplattform_Colours_Element-15.webp", alt="white" width=" 1025px" height="300px"  style= vertical-align:left;margin:0 5px;><!-- Picture of location -->
- <div class="centered">Location name </div> <!-- If you want to change the font,size,color or any other attributes do it in the css .centered section -->
-    </div></section>
-     <!-- The description and picture to the left of the description -->
-<section id="description">
-    <div class="clearfix"> <!-- This is to make sure that the picture and text are aligned -->
-        <img src="Audi_Brandplattform_Colours_Element-15.webp", alt="white"id="hp"> <!-- Another picture of location -->
-<div class id="text-box"> 
-   <h2> Description</h2> 
-    <p> A brief description of what the place is about and what is special about it</p>
-        </div></div>
-    </section> 
-   <!-- Location section of the website -->
-<section id="location">
-    <div class="clearfix">
-     <img src="Audi_Brandplattform_Colours_Element-15.webp", alt="white"id="hp2"> <!-- actual map of where it is located -->
-     <h2> Location</h2> 
-    <p> The location of the location</p>
-    </div>
-    </section>
-   <!-- The CO2 information  -->
-<section id ="CO2">
-    <div class="clearfix">
-         <img src="Audi_Brandplattform_Colours_Element-15.webp", alt="white"id="hp"> <!-- I am not sure what picture we can put in this one. perhaps graphs? -->
-   <h2> Carbon Dioxide levels</h2> 
-    <p> The CO2 levels over a course of time</p>
-    </div>
-    </section>
+  </nav>
+
+  <!-- Side Bar -->
+  <div class="collapse navbar-collapse flex-column p-3 navbar-custom float-end" id="fullSidebar" style="width: 280px;">
+    <!--Options of Sidebar-->
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">Sources</a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">About</a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <!--Header-->
+  <div class="jumbotron jumbotron-fluid text-center">
+    <!--Name of Location-->
+    <h1>Location name</h1>
+    <p>Address of Location</p>
+    <!--Background of Header -->
+    <img src="header_background.jpg" alt="header-bg">
+  </div>
+
+  <!--Content-->
+  <div class="container mx-1">
     
+    <!--Minimap-->
+    <div class="row">
+      <div class="col-sm-12">
+        <img src="minimap.jpg" class="rounded img-fluid mx-auto d-block" alt="minimap">
+      </div>
     </div>
+
+    <!--Section 1-->
+    <div class="row">
+      <div class="col-sm-12">
+        <h3> Section 1</h3>
+        <p>
+          A brief description of what the place is about and what is special about it
+        </p>
+        <img src="picture1.jpg" class="rounded img-fluid float-right" alt="picture1">
+      </div>
+    </div>
+
+    <!--Section 2-->
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>Section 2</h3>
+        <p>
+          The CO2 levels over the course of time.
+        </p>
+        <img src="graph.jpg" class="rounded img-fluid float-left" alt="graph1">
+      </div>
+    </div>
+
+    <!--Mission-->
+    <div class="row">
+      <div class="clo-sm-12">
+        <h3>Mission </h3>
+        <p>
+          The _____ levels over the course of time.
+        </p>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+      ...
+    </div>
+  </div>
+  
+  <!--Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
-</html> 
+
+</html>
