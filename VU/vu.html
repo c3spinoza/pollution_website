@@ -15,58 +15,75 @@
 </head>
 
 <body>
+  <!--Navagation Bar-->
+  <nav class="navbar navbar-custom" id="fullNavbar">
+    <div class="container-fluid">
+      <!--Navbar Brand-->
+      <span class="navbar-brand mb-0 h1">Nashville Pollution</span>
+      <!--Opening Icon/Button-->
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fullSidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
 
-  <!-- Opened Side Bar -->
-  <div class="wrapper">
-    <nav id="mySidebar" class="sidebar">
-      <!--Exit Button-->
-      <a href="javascript:void(0)" class="btn-sm" onclick="closeNav()">
-        <i class="bi-x"></i>
-      </a>
-      <!--Menu Options-->
-      <a href="#">Home</a>
-      <a href="#">Sources</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
+  <!-- Side Bar -->
+  <div class="collapse navbar-collapse flex-column p-3 navbar-custom float-end" id="fullSidebar" style="width: 280px;">
+    <!--Options of Sidebar-->
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">Sources</a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">About</a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
   </div>
-  <!--Opening Icon/Button-->
-  <div class="main">
-    <button type="button" class="btn-sm btn-dark" onclick="openNav()">
-      <i class="bi-list"></i>
-    </button>
-    <p></p>
 
-    
-    <!--Header-->
-    <div class="jumbotron jumbotron-fluid text-center">
-      <!--Name of Location-->
-      <h1>Location name</h1>
-      <p>Address of Location</p>
-      <!--Background of Header -->
-      <img src="header_background.jpg" alt="header-bg">
+  <!--Header-->
+  <div class="jumbotron jumbotron-fluid text-center">
+    <!--Name of Location-->
+    <h1>Location name</h1>
+    <p>Address of Location</p>
+    <!--Background of Header -->
+    <img src="header_background.jpg" alt="header-bg">
+  </div>
+
+  <!--Section 1-->
+  <div class="row">
+    <div class="col-sm-12">
+      <h3> Section 1</h3>
+      <p>
+        A brief description of what the place is about and what is special about it
+      </p>
+      <img src="picture1.jpg" class="rounded img-fluid float-right" alt="picture1">
     </div>
+  </div>
 
-    <!--Section 1-->
-    <div class="row">
-      <div class="col-sm-12">
-        <h3> Section 1</h3>
-        <p>
-          A brief description of what the place is about and what is special about it
-        </p>
-        <img src="picture1.jpg" class="rounded img-fluid float-right" alt="picture1">
-      </div>
+  <!--Section 2-->
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Section 2</h3>
+      <p>
+        The CO2 levels over the course of time.
+      </p>
+      <img src="graph.jpg" class="rounded img-fluid float-left" alt="graph1">
     </div>
+  </div>
 
-    <!--Section 2-->
-    <div class="row">
-      <div class="col-sm-12">
-        <h3>Section 2</h3>
-        <p>
-          The CO2 levels over the course of time.
-        </p>
-        <img src="graph.jpg" class="rounded img-fluid float-left" alt="graph1">
-      </div>
+  <!--Mission-->
+  <div class="row">
+    <div class="clo-sm-12">
+      <h3>Mission </h3>
+      <p>
+        The _____ levels over the course of time.
+      </p>
     </div>
   </div>
 
@@ -74,9 +91,8 @@
   <div class="footer">
     ...
   </div>
-
   <!--Bootstrap JS-->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 
 </html>
