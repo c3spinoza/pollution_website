@@ -36,3 +36,23 @@ body #fullSidebar #fullNavbar {
 #fullSidebar a:hover {
   color: #f1f1f1;
 }
+/*Header*/
+#header {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background: #e2e2e2;
+  color: black;
+}
+/*Content*/
+#miniMap #section1 #section2  {
+  background-color: white;
+}
+/*Mission*/
+#mission {
+  background-color: #f1f1f1;
+}
+/*Footer*/
+#footer {
+  background-color: #010101;
+  color: #a8a8a8;
+}
