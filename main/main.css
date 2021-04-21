@@ -3,7 +3,7 @@
 #header {
   padding: 80px;
   text-align: center;
-  background: #EEEEEE;
+  background: #eeeeee;
   color: black;
 }
 /*Body Font*/
@@ -15,7 +15,6 @@ body #fullSidebar #fullNavbar {
 .navbar-custom {
   background-color: #010101;
   color: #a8a8a8;
-  
 }
 /*Sidebar Toggler Color*/
 .navbar-toggler .navbar-toggler-icon {
@@ -38,18 +37,18 @@ body #fullSidebar #fullNavbar {
 #context {
   flex: 30%;
   background-color: white;
-  background: #DDDDDD;
+  background: #dddddd;
 }
 /*Map*/
 #map {
-  background-color: #CCCCCC;
+  background-color: #cccccc;
 }
 /*footer*/
 #footer {
   padding: 20px;
   text-align: center;
-  background: #BBBBBB;
-  text-align:left;
+  background: #bbbbbb;
+  text-align: left;
 }
 .nashville {
   position: relative;
