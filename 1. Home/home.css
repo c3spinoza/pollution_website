@@ -4,7 +4,12 @@
 body #fullSidebar #fullNavbar {
   font-family: "Roboto", sans-serif;
 }
-
+/*Remove padding & margins*/
+Body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 /*Navbar and Sidebar */
 .navbar-custom {
   background-color: #010101;
@@ -41,45 +46,12 @@ body #fullSidebar #fullNavbar {
   background-color: white;
 }
 /*Map*/
-#map {
+#nashvilleMap {
   background-color: #cccccc;
 }
-.nashville {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 400px;
-  height: 379px;
-}
-.bna {
-  position: relative;
-  top: 10;
-  left: 10;
-  width: 400px;
-  height: 379px;
-}
-.vu {
-  position: relative;
-  top: 20;
-  left: 20;
-  width: 40px;
-  height: 37px;
-}
-
-.cga {
-  position: relative;
-  top: 30;
-  left: 30;
-  width: 40px;
-  height: 37px;
-}
-
-.mndes {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 37px;
+ #map {
+  height: 25%;
+  width: 50%;
 }
 /*footer*/
 #footer {
