@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 
 <head>
   <title>Start</title>
@@ -14,7 +13,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
 </head>
 
-  
 <body>
   <!--Navagation Bar-->
   <nav class="navbar navbar-custom" id="fullNavbar">
@@ -46,38 +44,48 @@
       </li>
     </ul>
   </div>
-  
+
   <!--Header-->
-  <div class="header">
+  <div class="jumbotron jumbotron-fluid text-center" id="header">
     <!--Content of heading-->
     <h1>Title</h1>
     <p>Catchy Phrase</p>
   </div>
-  
+
+
   <!--Context & instructions-->
-  <div class="content">
-    <div class="context">
-      Context & Instructions
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-sm-12" id="context">
+        <h5>Context & Instructions</h5>
+        <p>The context and the instructions go here...</p>
+      </div>
     </div>
-    
+
     <!--Interactive Map-->
-    <div class="map">
-      <!--Image of map-->
-      <img class="nashville" src="nashville_map.jpg" alt="Nashville Map">
-      <!--Location Markers-->
-      <img class="bna" src="nashville_airport.jpg" alt="BNA Marker">
-      <img class="vu" src="vandervilt_university.jpg" alt="VU Marker">
-      <img class="l3" src="l_3.jpg" alt="L3 Marker">
-      <img class="l4" src="l_4.jpg" alt="L4 Marker">
+    <div class="row">
+      <div class="col-sm-12" id="map">
+        <h5>Map of Nashville</h5>
+        <!--Image of map-->
+        <img class="nashville" src="nashville_map.jpg" alt="Nashville Map">
+        <!--Location Markers-->
+        <img class="bna" src="nashville_airport.jpg" alt="BNA Marker">
+        <img class="vu" src="vandervilt_university.jpg" alt="VU Marker">
+        <img class="cga" src="carlex_glass_america.jpg" alt="CGA Marker">
+        <img class="mndes" src="Metro_Nashville_District_Energy_System.jpg" alt="MNDES Marker">
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="row">
+      <div class="col-sm-12" id="footer">
+        This is the footer
+      </div>
     </div>
   </div>
-  <!--Footer-->
-  <div class="footer">
-    <p>sources</p>
-  </div>
+
   <!--Bootstrap JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
-  
 
 </html>

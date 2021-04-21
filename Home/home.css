@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
 
-/*Global Styling*/
-* {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
-}
-
 /*Body Font*/
 body #fullSidebar #fullNavbar {
   font-family: "Roboto", sans-serif;
@@ -23,12 +14,13 @@ body #fullSidebar #fullNavbar {
 .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(204,204,204, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
 /*Sidebar Options*/
 #fullSidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #a8a8a8;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
 }
@@ -36,46 +28,22 @@ body #fullSidebar #fullNavbar {
 #fullSidebar a:hover {
   color: #f1f1f1;
 }
-/*Proper sizing*/
-* {
-  box-sizing: border-box;
-}
-
-/*Styling of header*/
-
-/*Header section styling*/
-.header {
+/*Header*/
+#header {
   padding: 80px;
   text-align: center;
-  background: #e2e2e2;
+  background: #eeeeee;
   color: black;
 }
-/*Increase size of h1*/
-.header h1 {
-  font-size: 40px;
-}
-
-/*Content of main page*/
-
-/*Columns container*/
-.content {
-  display: flex;
-  flex-direction: column;
-}
-/*Context section styling*/
-.context {
+/*Context*/
+#context {
   flex: 30%;
   background-color: white;
-  padding: 20px;
+  background: #dddddd;
 }
-/*Map section styling*/
-.map {
-  flex: 70%;
-  background-color: #f1f1f1;
-  padding: 20px;
-  position: relative;
-  top: 0;
-  left: 0;
+/*Map*/
+#map {
+  background-color: #cccccc;
 }
 .nashville {
   position: relative;
@@ -98,26 +66,26 @@ body #fullSidebar #fullNavbar {
   width: 40px;
   height: 37px;
 }
-.l3 {
+
+.cga {
   position: relative;
   top: 30;
   left: 30;
   width: 40px;
   height: 37px;
 }
-.l4 {
+
+.mndes {
   position: relative;
   top: 0;
   left: 0;
   width: 40px;
   height: 37px;
 }
-/*footer styling*/
-.footer {
+/*footer*/
+#footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
-}
-.footer p {
+  background: #bbbbbb;
   text-align: left;
 }
