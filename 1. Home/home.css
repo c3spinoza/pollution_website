@@ -48,13 +48,15 @@ Body {
 /*Map*/
 #nashvilleMap {
   background-color: #cccccc;
+  height: 100%%;
+  width: 100%;
 }
  #map {
-  height: 25%;
-  width: 50%;
+  height: 50%%;
+  width: 100%;
 }
 /*footer*/
 #footer {
   background-color: #bbbbbb;
-  color: #a8a8a8;
+  color: #black;
 }
