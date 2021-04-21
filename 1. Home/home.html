@@ -5,6 +5,7 @@
   <title>Start</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <!--Styling of website-->
   <style src="main.css"></style>
   <!--Bootstrap CSS-->
@@ -52,9 +53,8 @@
     <p>Catchy Phrase</p>
   </div>
 
-
   <!--Context & instructions-->
-  <div class="container-fluid ">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12" id="context">
         <h5>Context & Instructions</h5>
@@ -64,10 +64,10 @@
 
     <!--Interactive Map-->
     <div class="row">
-      <div class="col-sm-12" id="map">
+      <div class="col-sm-12" id="nasvilleMap">
         <h5>Map of Nashville</h5>
         <!--Google Maps-->
-        <img class="" id="nashvilleMap" src="nashville_map.jpg" alt="Nashville Map">
+        <div id="map"></div>
       </div>
     </div>
 
@@ -78,9 +78,11 @@
       </div>
     </div>
   </div>
-
+  
   <!--Bootstrap JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <!--Google Maps Key-->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6oXb66YRZEKsX0ERUeQQmQLTYeVfguQ&callback=initMap"></script>
 </body>
 
 </html>
