@@ -30,16 +30,15 @@ body #fullSidebar #fullNavbar {
 }
 /*Header*/
 #header {
-  padding: 80px;
+  padding-top: 4%;
+  padding-bottom: 4%;
   text-align: center;
   background: #eeeeee;
   color: black;
 }
 /*Context*/
 #context {
-  flex: 30%;
   background-color: white;
-  background: #dddddd;
 }
 /*Map*/
 #map {
@@ -84,8 +83,6 @@ body #fullSidebar #fullNavbar {
 }
 /*footer*/
 #footer {
-  padding: 20px;
-  text-align: center;
-  background: #bbbbbb;
-  text-align: left;
+  background-color: #bbbbbb;
+  color: #a8a8a8;
 }
