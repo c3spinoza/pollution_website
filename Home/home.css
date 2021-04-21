@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
+
+/*Global Styling*/
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/*Body Font*/
+body #fullSidebar #fullNavbar {
+  font-family: "Roboto", sans-serif;
+}
+
+/*Navbar and Sidebar */
+.navbar-custom {
+  background-color: #010101;
+  color: #a8a8a8;
+}
+/*Sidebar Toggler Color*/
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(204,204,204, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/*Sidebar Options*/
+#fullSidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #a8a8a8;
+  display: block;
+  transition: 0.3s;
+}
+/*Text Color Change Animation of Options*/
+#fullSidebar a:hover {
+  color: #f1f1f1;
+}
+/*Proper sizing*/
+* {
+  box-sizing: border-box;
+}
+
+/*Styling of header*/
+
+/*Header section styling*/
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #e2e2e2;
+  color: black;
+}
+/*Increase size of h1*/
+.header h1 {
+  font-size: 40px;
+}
+
+/*Content of main page*/
+
+/*Columns container*/
+.content {
+  display: flex;
+  flex-direction: column;
+}
+/*Context section styling*/
+.context {
+  flex: 30%;
+  background-color: white;
+  padding: 20px;
+}
+/*Map section styling*/
+.map {
+  flex: 70%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.nashville {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 379px;
+}
+.bna {
+  position: relative;
+  top: 10;
+  left: 10;
+  width: 400px;
+  height: 379px;
+}
+.vu {
+  position: relative;
+  top: 20;
+  left: 20;
+  width: 40px;
+  height: 37px;
+}
+.l3 {
+  position: relative;
+  top: 30;
+  left: 30;
+  width: 40px;
+  height: 37px;
+}
+.l4 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 37px;
+}
+/*footer styling*/
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+.footer p {
+  text-align: left;
+}
