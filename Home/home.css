@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
-/*Header*/
-#header {
-  padding: 80px;
-  text-align: center;
-  background: #eeeeee;
-  color: black;
-}
+
 /*Body Font*/
 body #fullSidebar #fullNavbar {
   font-family: "Roboto", sans-serif;
@@ -20,7 +14,8 @@ body #fullSidebar #fullNavbar {
 .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(204,204,204, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-/*Sidebar Options opened*/
+
+/*Sidebar Options*/
 #fullSidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -33,6 +28,13 @@ body #fullSidebar #fullNavbar {
 #fullSidebar a:hover {
   color: #f1f1f1;
 }
+/*Header*/
+#header {
+  padding: 80px;
+  text-align: center;
+  background: #eeeeee;
+  color: black;
+}
 /*Context*/
 #context {
   flex: 30%;
@@ -42,13 +44,6 @@ body #fullSidebar #fullNavbar {
 /*Map*/
 #map {
   background-color: #cccccc;
-}
-/*footer*/
-#footer {
-  padding: 20px;
-  text-align: center;
-  background: #bbbbbb;
-  text-align: left;
 }
 .nashville {
   position: relative;
@@ -71,6 +66,7 @@ body #fullSidebar #fullNavbar {
   width: 40px;
   height: 37px;
 }
+
 .cga {
   position: relative;
   top: 30;
@@ -78,10 +74,18 @@ body #fullSidebar #fullNavbar {
   width: 40px;
   height: 37px;
 }
+
 .mndes {
   position: relative;
   top: 0;
   left: 0;
   width: 40px;
   height: 37px;
+}
+/*footer*/
+#footer {
+  padding: 20px;
+  text-align: center;
+  background: #bbbbbb;
+  text-align: left;
 }
