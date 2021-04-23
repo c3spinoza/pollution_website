@@ -36,6 +36,15 @@ body #fullSidebar #fullNavbar {
   background: #eeeeee;
   color: black;
 }
+
+#header-image-container {
+  height: 60px;
+  width: auto;
+}
+
+#header-skyline {
+  height: inherit;
+}
 /*Context*/
 #context {
   background-color: white;
