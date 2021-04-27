@@ -36,14 +36,16 @@ body #fullSidebar #fullNavbar {
   background: #eeeeee;
   color: black;
 }
-
+/*Icon picture and navigation bar size*/
 #header-image-container {
-  height: 60px;
+  height: 80px;
   width: auto;
 }
 
 #header-skyline {
   height: inherit;
+  width;180px;
+  height:80px;
 }
 /*Context*/
 #context {
