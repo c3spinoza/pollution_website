@@ -4,12 +4,6 @@
 body #fullSidebar #fullNavbar {
   font-family: "Roboto", sans-serif;
 }
-/*Remove padding & margins*/
-Body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 /*Navbar and Sidebar */
 .navbar-custom {
   background-color: #010101;
@@ -44,19 +38,19 @@ Body {
 /*Context*/
 #context {
   background-color: white;
-}
+} 
 /*Map*/
-#nashvilleMap {
-  background-color: #cccccc;
-  height: 100%%;
+#mapRow {
   width: 100%;
+  height: 400px;
 }
  #map {
-  height: 50%;
+  height: 100%;
   width: 100%;
 }
+
 /*footer*/
 #footer {
   background-color: #bbbbbb;
-  color: #black;
+  color: black;
 }
