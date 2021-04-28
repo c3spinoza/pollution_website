@@ -43,6 +43,17 @@ body #fullSidebar #fullNavbar {
   background: #e2e2e2;
   color: black;
 }
+/*Icon picture and navigation bar size*/
+#header-image-container {
+  height: 80px;
+  width: auto;
+}
+
+#header-skyline {
+  height: inherit;
+  width;180px;
+  height:80px;
+}
 /*Content*/
 #miniMap #section1 #section2  {
   background-color: white;
