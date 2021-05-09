@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
-
 /*Body Font*/
 body #fullSidebar #fullNavbar {
   font-family: "Roboto", sans-serif;
@@ -7,13 +6,12 @@ body #fullSidebar #fullNavbar {
 /*Navbar and Sidebar */
 .navbar-custom {
   background-color: #010101;
-  color: #a8a8a8;
+  color: #A8A8A8;
 }
 /*Sidebar Toggler Color*/
 .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(204,204,204, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-
 /*Sidebar Options*/
 #fullSidebar a {
   padding: 8px 8px 8px 32px;
@@ -32,8 +30,18 @@ body #fullSidebar #fullNavbar {
   padding-top: 4%;
   padding-bottom: 4%;
   text-align: center;
-  background: #eeeeee;
+  background: #EEEEEE;
   color: black;
+}
+/*Icon picture and navigation bar size*/
+#header-image-container {
+   height: 80px;
+  width: auto;
+}
+#header-skyline {
+  height: inherit;
+  width;180px;
+  height:80px;
 }
 /*Context*/
 #context {
@@ -48,7 +56,6 @@ body #fullSidebar #fullNavbar {
   height: 100%;
   width: 100%;
 }
-
 /*footer*/
 #footer {
   background-color: #bbbbbb;
