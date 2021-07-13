@@ -1,1 +1,69 @@
+import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
+
+/*Global Styling*/
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/*Body Font*/
+body #fullSidebar #fullNavbar {
+  font-family: "Roboto", sans-serif;
+}
+
+/*Navbar and Sidebar */
+.navbar-custom {
+  background-color: #010101;
+  color: #a8a8a8;
+}
+/*Sidebar Toggler Color*/
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(204,204,204, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/*Sidebar Options*/
+#fullSidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+/*Text Color Change Animation of Options Bootstrap*/
+#fullSidebar a:hover {
+  color: #f1f1f1;
+}
+/*Header*/
+#header {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background: #e2e2e2;
+  color: black;
+}
+/*Icon picture and navigation bar size*/
+#header-image-container {
+  height: 80px;
+  width: auto;
+}
+
+#header-skyline {
+  height: inherit;
+  width: 180px;
+}
+/*Content*/
+#miniMap #section1 #section2  {
+  background-color: white;
+}
+/*Mission*/
+#mission {
+  background-color: #f1f1f1;
+}
+/*Footer*/
+#footer {
+  background-color: #bbbbbb;
+  color: #a8a8a8;
+}
 
