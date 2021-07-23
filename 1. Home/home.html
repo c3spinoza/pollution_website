@@ -28,7 +28,7 @@
   <nav class="navbar navbar-custom" id="fullNavbar">
     <div class="container-fluid">
       <!--Skylin Icon-->
-       <img src="https://bn1305files.storage.live.com/y4mk6P0-CjF7p8OQ8j6UI51kubMApzroNDpoFTDCGvO18Rqju1fHh4p87-yY1AMoohxzgZ4mG-6aPMeojIr1ZOe16VHxJk0WVRQcWLhO7OrOluzYWiBtqcbuyv5xyjL6BDqsUak8P4sIdRR_7Hm-WSHpnOXxVbAPFOP3QsAOKuAn9kfxaJ2cizlaU8_ZxVqjpWC?width=660&height=330&cropmode=none" alt="skyline" id="header-skyline" />
+      <img src="https://bn1305files.storage.live.com/y4mk6P0-CjF7p8OQ8j6UI51kubMApzroNDpoFTDCGvO18Rqju1fHh4p87-yY1AMoohxzgZ4mG-6aPMeojIr1ZOe16VHxJk0WVRQcWLhO7OrOluzYWiBtqcbuyv5xyjL6BDqsUak8P4sIdRR_7Hm-WSHpnOXxVbAPFOP3QsAOKuAn9kfxaJ2cizlaU8_ZxVqjpWC?width=660&height=330&cropmode=none" alt="skyline" id="header-skyline" />
       <!--Opening Icon/Button-->
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fullSidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -97,15 +97,20 @@
 
   <!--JS-->
   <script>
+    //Map
     var mymap = L.map('map').setView([36.174465, -86.767960], 11);
+    //Map's Sources
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoidGFsbGlhYmxlLXNvY2lldG9sb2d5IiwiYSI6ImNrcmF2ODlkcjNpY3YycnJ4OTR6eWVhNmEifQ.wIwj4TNBBVeScPzezR5I0g', {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox/">Mapbox</a>',
+      //Map's Additional Attributions
       maxZoom: 18,
       id: 'mapbox/streets-v11',
       tileSize: 512,
       zoomOffset: -1,
       accessToken: 'pk.eyJ1IjoidGFsbGlhYmxlLXNvY2lldG9sb2d5IiwiYSI6ImNrcmF2ODlkcjNpY3YycnJ4OTR6eWVhNmEifQ.wIwj4TNBBVeScPzezR5I0g'
     }).addTo(mymap);
+
+
   </script>
 
 
