@@ -40,7 +40,7 @@ body #fullSidebar #fullNavbar {
 }
 #header-skyline {
   height: inherit;
-  width: 180px;
+  width: 80%;
 }
 /*Context*/
 #context {
@@ -49,11 +49,11 @@ body #fullSidebar #fullNavbar {
 /*Map*/
 #mapRow {
   width: 100%;
-  height: 400px;
+  height: 50%;
 }
  #map {
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: 80%;
 }
 /*footer*/
 #footer {
