@@ -5,22 +5,30 @@
   <title>Start</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <!--Styling of website-->
-  <style src="main.css"></style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <!--Stylesheet -->
+  <link rel="stylesheet" href="home.css">
   <!--Bootstrap CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <!--Bootstrap Icons-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-  
+  <!--Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin="" />
+  <!--Leaflet JS-->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
 </head>
 
 <body>
   <!--Navagation Bar-->
   <nav class="navbar navbar-custom" id="fullNavbar">
     <div class="container-fluid">
-      <!--Navbar Brand-->
-      <div class="navbar-brand mb-0 h1" id="header-image-container"><img src="https://bn1305files.storage.live.com/y4mk6P0-CjF7p8OQ8j6UI51kubMApzroNDpoFTDCGvO18Rqju1fHh4p87-yY1AMoohxzgZ4mG-6aPMeojIr1ZOe16VHxJk0WVRQcWLhO7OrOluzYWiBtqcbuyv5xyjL6BDqsUak8P4sIdRR_7Hm-WSHpnOXxVbAPFOP3QsAOKuAn9kfxaJ2cizlaU8_ZxVqjpWC?width=660&height=330&cropmode=none" alt="skyline" id="header-skyline"></div>
+      <!--Skylin Icon-->
+       <img src="https://bn1305files.storage.live.com/y4mk6P0-CjF7p8OQ8j6UI51kubMApzroNDpoFTDCGvO18Rqju1fHh4p87-yY1AMoohxzgZ4mG-6aPMeojIr1ZOe16VHxJk0WVRQcWLhO7OrOluzYWiBtqcbuyv5xyjL6BDqsUak8P4sIdRR_7Hm-WSHpnOXxVbAPFOP3QsAOKuAn9kfxaJ2cizlaU8_ZxVqjpWC?width=660&height=330&cropmode=none" alt="skyline" id="header-skyline" />
       <!--Opening Icon/Button-->
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fullSidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -51,7 +59,9 @@
   <div class="jumbotron jumbotron-fluid text-center" id="header">
     <!--Content of heading-->
     <h1>Title</h1>
-    <p>Catchy Phrase</p>
+    <p>
+      Catchy Phrase
+    </p>
   </div>
 
   <!--Context & instructions-->
@@ -59,49 +69,46 @@
     <div class="row">
       <div class="col-sm-12" id="context">
         <h5>Context & Instructions</h5>
-        <p>The context and the instructions go here...</p>
+        <p>
+          The context and the instructions go here...
+        </p>
       </div>
     </div>
 
     <!--Interactive Map-->
-    <div class="row" id="mapRow" >
+    <div class="row" id="mapRow">
       <div class="col-sm-12">
         <h5>Map of Nashville</h5>
         <!--Google Maps-->
         <div id="map"></div>
       </div>
     </div>
-      
+
     <!--Footer-->
-    <div class="row" >
+    <div class="row">
       <div class="col-sm-12" id="footer">
         This is the footer
       </div>
     </div>
   </div>
-  
+
   <!--Bootstrap JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-  
+
   <!--JS-->
   <script>
-    function initMap() {
-  var location = {lat: 36.166340,lng: -86.779068};
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 12,
-    center: location,
-  });
-  new google.maps.Marker({
-    position: location,
-    map,
-    title: "Hello World!",
-  });
-} 
+    var mymap = L.map('map').setView([36.174465, -86.767960], 11);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoidGFsbGlhYmxlLXNvY2lldG9sb2d5IiwiYSI6ImNrcmF2ODlkcjNpY3YycnJ4OTR6eWVhNmEifQ.wIwj4TNBBVeScPzezR5I0g', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox/">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox/streets-v11',
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken: 'pk.eyJ1IjoidGFsbGlhYmxlLXNvY2lldG9sb2d5IiwiYSI6ImNrcmF2ODlkcjNpY3YycnJ4OTR6eWVhNmEifQ.wIwj4TNBBVeScPzezR5I0g'
+    }).addTo(mymap);
   </script>
-  <!--Google Maps Key-->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2Do4lri4eevvbq_OKIz8XO_Wo0uCgnHA&callback=initMap"
-  type="text/javascript"></script>
-  
-  </body>
+
+
+</body>
 
 </html>
