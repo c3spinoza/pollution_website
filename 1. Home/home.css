@@ -35,12 +35,12 @@ body #fullSidebar #fullNavbar {
 }
 /*Icon picture and navigation bar size*/
 #header-image-container {
-  height: 80px;
-  width: auto;
+  height: 20%;
+  width: 20%;
 }
 #header-skyline {
-  height: inherit;
-  width: 80%;
+  height: 30%;
+  width: 25%;
 }
 /*Context*/
 #context {
