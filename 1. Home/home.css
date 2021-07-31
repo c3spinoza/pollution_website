@@ -16,10 +16,11 @@ body #fullSidebar #fullNavbar {
 #fullSidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 5%;
   color: #a8a8a8;
   display: block;
   transition: 0.3s;
+  width: 30%;
 }
 /*Text Color Change Animation of Options*/
 #fullSidebar a:hover {
@@ -29,18 +30,13 @@ body #fullSidebar #fullNavbar {
 #header {
   padding-top: 4%;
   padding-bottom: 4%;
-  text-align: center;
   background: #EEEEEE;
   color: black;
 }
-/*Icon picture and navigation bar size*/
-#header-image-container {
-  height: 80px;
-  width: auto;
-}
+/* Nashville Skyline Header Brand */
 #header-skyline {
-  height: inherit;
-  width: 80%;
+  height: 30%;
+  width: 20%;
 }
 /*Context*/
 #context {
