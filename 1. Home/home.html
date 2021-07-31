@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-  <title>Start</title>
+  <title>Home</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <!--Stylesheet -->
   <link rel="stylesheet" href="home.css">
   <!--Bootstrap CSS-->
@@ -78,7 +77,7 @@
     <!--Interactive Map-->
     <div class="row">
       <div class="col-sm-12" id="mapTitlte">
-          <h5>Map of Nashville</h5>
+        <h5>Map of Nashville</h5>
       </div>
     </div>
     <div class="row" id="mapRow">
@@ -100,7 +99,7 @@
   <!--JS-->
 
   <script>
-   //Map
+    //Map
 
     //Initialization of Map
     var nashvilleMap = L.map('map', {
@@ -116,12 +115,16 @@
       accessToken: 'pk.eyJ1IjoidGFsbGlhYmxlLXNvY2lldG9sb2d5IiwiYSI6ImNrcmF2ODlkcjNpY3YycnJ4OTR6eWVhNmEifQ.wIwj4TNBBVeScPzezR5I0g'
     }).addTo(nashvilleMap);
 
-  //Markers
+    //Markers
     //VU
-    var vu = L.marker([36.144444, -86.802778], {riseOnHover:true}).addTo(nashvilleMap);
+    var vu = L.marker([36.144444, -86.802778], {
+      riseOnHover: true
+    }).addTo(nashvilleMap);
     vu.bindPopup("Vanderbilt University").openPopup();
     //BNA
-    var bna = L.marker([36.126111, -86.677222], {riseOnHover:true}).addTo(nashvilleMap);
+    var bna = L.marker([36.126111, -86.677222], {
+      riseOnHover: true
+    }).addTo(nashvilleMap);
     bna.bindPopup("Nashville International Airport").openPopup();
     //MNDES
     var mndes = L.marker([36.158056, -86.770278]).addTo(nashvilleMap);
