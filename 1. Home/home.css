@@ -15,7 +15,7 @@ body #fullSidebar #fullNavbar {
 /*Sidebar Options*/
 #fullSidebar a {
   text-decoration: none;
-  font-size: 5%;
+  font-size: 100%;
   color: #a8a8a8;
   display: block;
   transition: 0.3s;
