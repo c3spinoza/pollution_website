@@ -43,7 +43,10 @@ body #fullSidebar #fullNavbar {
 }
 /*Map*/
 #map {
-  height: 100%;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 8px;
+  height: 400px; 
   width: 100%;
 }
 /*footer*/
