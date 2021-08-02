@@ -124,9 +124,9 @@
           //Pop-up
           vu.bindPopup("Vanderbilt University").openPopup();
           //link
-          .on("dbclick", function() {
-        
-      });
+          vu.on("dbclick", function() {
+            window.location.href = "vu.html"
+          });
       
         //BNA
           //Marker
@@ -136,8 +136,8 @@
           //Pop-up
           bna.bindPopup("Nashville International Airport").openPopup();
           //Link
-          .on("dbclick", function() {
-            
+          bna.on("dbclick", function() {
+            window.location.href = "bna.html"
           });
       
         //MNDES
@@ -147,8 +147,8 @@
           mndes.bindPopup("Metro Nashville District Energy System").openPopup(
           );
           //Link
-          .on("dbclick", function() {
-              
+          mndes.on("dbclick", function() {
+            window.location.href = "mndes.html"
           });
       
         //CGA
@@ -157,8 +157,8 @@
           //Pop-up
           cga.bindPopup("Carlex Glass of America").openPopup();
           //Link
-          .on("dbclick", function() {
-              
+          cga.on("dbclick", function() {
+            window.location.href = "cga.html"
           });
 
     </script>
