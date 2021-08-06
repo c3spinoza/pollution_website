@@ -32,10 +32,13 @@ body #fullSidebar #fullNavbar {
   background: #EEEEEE;
   color: black;
 }
+
 /* Nashville Skyline Header Brand */
 #header-skyline {
   height: 30%;
   width: 20%;
+
+
 }
 /*Context*/
 #context {
