@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-  <title>Start</title>
+  <title>Home</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   <!--Stylesheet -->
   <link rel="stylesheet" href="home.css">
   <!--Bootstrap CSS-->
@@ -19,7 +18,8 @@
   <!--Leaflet JS-->
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
+    crossorigin="">
+  </script>
 
 </head>
 
@@ -37,7 +37,7 @@
   </nav>
 
   <!-- Side Bar -->
-  <div class="collapse navbar-collapse flex-column p-3 navbar-custom float-end" id="fullSidebar" style="width: 280px;">
+  <div class="collapse navbar-collapse flex-column p-3 navbar-custom float-end" id="fullSidebar">
     <!--Options of Sidebar-->
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
@@ -47,10 +47,10 @@
         <a href="sources.html" class="nav-link">Sources</a>
       </li>
       <li>
-        <a href="about.html" class="nav-link">About</a>
+        <a href="action-steps.html" class="nav-link">Action Steps</a>
       </li>
       <li>
-        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="about.html" class="nav-link">About</a>
       </li>
     </ul>
   </div>
@@ -58,38 +58,62 @@
   <!--Header-->
   <div class="jumbotron jumbotron-fluid text-center" id="header">
     <!--Content of heading-->
-    <h1>Title</h1>
+    <h1>Nashville's Environment </h1>
     <p>
-      Catchy Phrase
+      Learn About Our Beautiful City!
     </p>
   </div>
 
-  <!--Context & instructions-->
+  <!--Context & Instructions-->
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12" id="context">
-        <h5>Context & Instructions</h5>
+        <h5>Context & Intructions</h5>
+        <!--Context-->
         <p>
-          The context and the instructions go here...
-        </p>
-      </div>
+          This website is part of our research project that attempts to teach about the pollution and conservation efforts in Nashville while also teaching a little about the city's history. At this point, you should already have taken a little survey about that and figured out how to get here. Now, follow the the next instructions, but make sure to read all the instructions before doing any of them:
+        </br>
+        <!--Instructions (Ordered List)-->
+        <ol>
+          <li>
+            Go to the Map of Nashville below.
+          </li>
+          <li>
+            Double click on the blue marker closest to the top left corner.
+          </li>
+          <li>
+            Read the paragraphs about the location that that marker corresponded to and answer the question(s) at the end.
+          </li>
+          <li>
+            Go back to the home page by clicking on the hamburger menu on the top right of the website and then clicking <b>Home</b>.
+          </li>
+          <li>
+            Repeat steps 2 and 3 but with the remaining 3 markers (attempt to move the top left to the bottom right).
+          </li>
+          <li>
+            Visit the sources and the page for action steps by clicking in the hamburger menu and clicking <b>Sources</b> or <b>Action Steps</b> (Optional).
+          </li>
+          <li>
+            When you are done reading all the pages and answering the questions, please take the second part of the survey.
+          </li>
+        </ol>
+      </p>
     </div>
+  </div>
 
-    <!--Interactive Map-->
-    <div class="row">
-      <div class="col-sm-12" id="mapTitlte">
-          <h5>Map of Nashville</h5>
+  <!--Interactive Map-->
+  <div class="row">
+    <div class="col-sm-12">
+      <h5>Map of Nashville</h5>
+      <div id="map">
       </div>
     </div>
-    <div class="row" id="mapRow">
-      <div class="col-sm-12" id="map">
-      </div>
     </div>
 
     <!--Footer-->
     <div class="row">
       <div class="col-sm-12" id="footer">
-        This is the footer
+        Copyright info and tools used will be here.
       </div>
     </div>
   </div>
@@ -98,39 +122,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
   <!--JS-->
-
-  <script>
-   //Map
-
-    //Initialization of Map
-    var nashvilleMap = L.map('map', {
-      center: [36.174465, -86.767960],
-      zoom: 11,
-    });
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoidGFsbGlhYmxlLXNvY2lldG9sb2d5IiwiYSI6ImNrcmF2ODlkcjNpY3YycnJ4OTR6eWVhNmEifQ.wIwj4TNBBVeScPzezR5I0g', {
-      maxZoom: 18,
-      tileSize: 512,
-      zoomOffset: -1,
-      id: 'mapbox/streets-v11',
-      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox/">Mapbox</a>',
-      accessToken: 'pk.eyJ1IjoidGFsbGlhYmxlLXNvY2lldG9sb2d5IiwiYSI6ImNrcmF2ODlkcjNpY3YycnJ4OTR6eWVhNmEifQ.wIwj4TNBBVeScPzezR5I0g'
-    }).addTo(nashvilleMap);
-
-  //Markers
-    //VU
-    var vu = L.marker([36.144444, -86.802778], {riseOnHover:true}).addTo(nashvilleMap);
-    vu.bindPopup("Vanderbilt University").openPopup();
-    //BNA
-    var bna = L.marker([36.126111, -86.677222], {riseOnHover:true}).addTo(nashvilleMap);
-    bna.bindPopup("Nashville International Airport").openPopup();
-    //MNDES
-    var mndes = L.marker([36.158056, -86.770278]).addTo(nashvilleMap);
-    mndes.bindPopup("Metro Nashville District Energy System").openPopup();
-    //CGA
-    var cga = L.marker([36.181944, -86.873333]).addTo(nashvilleMap);
-    cga.bindPopup("Carlex Glass of America").openPopup();
-
-  </script>
+  <script src="home.js"></script>
 
 </body>
+
 </html>
