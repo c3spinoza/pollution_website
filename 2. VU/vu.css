@@ -54,10 +54,14 @@ body #fullSidebar #fullNavbar {
 #context {
   background-color: white;
 }
-/*Map*/
-#map {
-  background-color: #cccccc;
-}
+/*MiniMap*/
+#miniMap {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 8px;
+  height: 400px;
+  width: 100%;
+} 
 .nashville {
   position: relative;
   top: 0;
