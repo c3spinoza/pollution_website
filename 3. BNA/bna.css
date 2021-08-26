@@ -54,9 +54,17 @@ body #fullSidebar #fullNavbar {
   width: 180px;
 }
 /*Content*/
-#miniMap #section1 #section2  {
+#section1 #section2  {
   background-color: white;
 }
+/*MiniMap*/
+#miniMap {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 8px;
+  height: 400px;
+  width: 100%;
+} 
 /*Mission*/
 #mission {
   background-color: #f1f1f1;
@@ -66,4 +74,3 @@ body #fullSidebar #fullNavbar {
   background-color: #bbbbbb;
   color: #a8a8a8;
 }
-
