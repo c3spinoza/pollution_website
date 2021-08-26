@@ -28,22 +28,14 @@ body #fullSidebar #fullNavbar {
   color: #ffffff;
 }
 /*Header*/
-#header {
-  padding-top: 4%;
-  padding-bottom: 4%;
-  text-align: center;
+#header-text {
   background: white;
-  color: black;
-  z-index:2;
-}
-#headerpic {
-  z-index:1;
+  border-radius: 25px;
+  border: 2px solid black;
+ color: #d8ab4d; 
+ 
 }
 /*Icon picture and navigation bar size*/
-#header-image-container {
-  height: 80px;
-  width: auto;
-}
 
 #header-skyline {
   height: inherit;
@@ -110,21 +102,21 @@ p {
   font-size: large;
 }
 #vanderbilt-campus {
-    height: ;
+    height: 70%;
   width: 100%;
+  border-radius: 55px;
 }
 #neutrality {
-  height: 280px;
-  width: 497px;
-  border-radius: 75px; 
+  height: 100%;
+  width: 100%;
+  border-radius: 55px; 
  
 }
 #report {
-  height: 440px;
-  width: 640px;
+  height: 100%;
+  width: 100%;
   border-radius: 25px;
-   
-}
+   }
 #event {
   background: rgba(216,171,77,0.8);
 }
