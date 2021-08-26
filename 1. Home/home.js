@@ -1,7 +1,7 @@
- //Map
+   //Map
 
         //Initialization of Map
-        var miniMap = L.map('miniMap', {
+        var nashvilleMap = L.map('map', {
           center: [36.174465, -86.767960],
           zoom: 11,
         });
@@ -12,13 +12,15 @@
           id: 'mapbox/streets-v11',
           attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox/">Mapbox</a>',
           accessToken: 'pk.eyJ1IjoidGFsbGlhYmxlLXNvY2lldG9sb2d5IiwiYSI6ImNrcmF2ODlkcjNpY3YycnJ4OTR6eWVhNmEifQ.wIwj4TNBBVeScPzezR5I0g'
-        }).addTo(miniMap);
+        }).addTo(nashvilleMap);
 
       //Locations
 
         //VU
           //Marker
-          var vu = L.marker([36.144444, -86.802778], opacity=0.5).addTo(miniMap);
+          var vu = L.marker([36.144444, -86.802778], {
+            riseOnHover: true
+          }).addTo(nashvilleMap);
           //Pop-up
           vu.bindPopup("Vanderbilt University").openPopup();
           //link
@@ -30,7 +32,7 @@
           //Marker
           var bna = L.marker([36.126111, -86.677222], {
             riseOnHover: true
-          }).addTo(miniMap);
+          }).addTo(nashvilleMap);
           //Pop-up
           bna.bindPopup("Nashville International Airport").openPopup();
           //Link
@@ -40,7 +42,7 @@
       
         //MNDES
           //Marker
-          var mndes = L.marker([36.158056, -86.770278], opacity=0.5).addTo(miniMap);
+          var mndes = L.marker([36.158056, -86.770278]).addTo(nashvilleMap);
           //Pop-up
           mndes.bindPopup("Metro Nashville District Energy System").openPopup(
           );
@@ -51,7 +53,7 @@
       
         //CGA
           //Marker
-          var cga = L.marker([36.181944, -86.873333], opacity=0.5).addTo(miniMap);
+          var cga = L.marker([36.181944, -86.873333]).addTo(nashvilleMap);
           //Pop-up
           cga.bindPopup("Carlex Glass of America").openPopup();
           //Link
