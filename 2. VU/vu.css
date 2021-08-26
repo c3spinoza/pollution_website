@@ -1,15 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
-
-/*Global Styling*/
-* {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
-}
-
 /*Body Font*/
+
 body #fullSidebar #fullNavbar {
   font-family: "Roboto", sans-serif;
 }
@@ -28,42 +19,115 @@ body #fullSidebar #fullNavbar {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #ffffff;
+  color: #a8a8a8;
   display: block;
   transition: 0.3s;
 }
-/*Text Color Change Animation of Options Bootstrap*/
+/*Text Color Change Animation of Options*/
 #fullSidebar a:hover {
-  color: #f1f1f1;
+  color: #ffffff;
 }
 /*Header*/
-#header {
-  padding-top: 4%;
-  padding-bottom: 4%;
-  background: #e2e2e2;
-  color: black;
+#header-text {
+  background: white;
+  border-radius: 25px;
+  border: 2px solid black;
+ color: #d8ab4d; 
+ 
 }
 /*Icon picture and navigation bar size*/
-#header-image-container {
-  height: 80px;
-  width: auto;
-}
 
 #header-skyline {
   height: inherit;
   width;180px;
   height:80px;
 }
-/*Content*/
-#miniMap #section1 #section2  {
+/*Context*/
+#context {
   background-color: white;
 }
-/*Mission*/
-#mission {
-  background-color: #f1f1f1;
+/*MiniMap*/
+#miniMap {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 8px;
+  height: 400px;
+  width: 100%;
+} 
+.nashville {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 379px;
 }
-/*Footer*/
+.bna {
+  position: relative;
+  top: 10;
+  left: 10;
+  width: 400px;
+  height: 379px;
+}
+.vu {
+  position: relative;
+  top: 20;
+  left: 20;
+  width: 40px;
+  height: 37px;
+}
+.cga {
+  position: relative;
+  top: 30;
+  left: 30;
+  width: 40px;
+  height: 37px;
+}
+.mndes {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 37px;
+}
+/*footer*/
 #footer {
   background-color: #bbbbbb;
   color: #a8a8a8;
+}
+
+#campus {
+  height: 1000px;
+}
+p {
+  font-size: large;
+}
+#vanderbilt-campus {
+    height: 70%;
+  width: 100%;
+  border-radius: 55px;
+}
+#neutrality {
+  height: 100%;
+  width: 100%;
+  border-radius: 55px; 
+ 
+}
+#report {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+   }
+#event {
+  background: rgba(216,171,77,0.8);
+}
+#event-text {
+  border-radius: 25px;
+  border: 2px solid white;
+ color: #d8ab4d; 
+}
+#facilities {
+  height: 90%;
+  width: 100%;
+  border-radius: 25px;
+ 
 }

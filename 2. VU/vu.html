@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Location Name</title>
+  <title>Vanderbilt University</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +12,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <!--Bootstrap Icons-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  <!--Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+  <!--Leaflet JS-->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""> </script>
 </head>
 
 <body>
@@ -19,7 +23,8 @@
   <nav class="navbar navbar-custom" id="fullNavbar">
     <div class="container-fluid">
       <!--Navbar Brand-->
-      <img src="https://bn1305files.storage.live.com/y4mk6P0-CjF7p8OQ8j6UI51kubMApzroNDpoFTDCGvO18Rqju1fHh4p87-yY1AMoohxzgZ4mG-6aPMeojIr1ZOe16VHxJk0WVRQcWLhO7OrOluzYWiBtqcbuyv5xyjL6BDqsUak8P4sIdRR_7Hm-WSHpnOXxVbAPFOP3QsAOKuAn9kfxaJ2cizlaU8_ZxVqjpWC?width=660&height=330&cropmode=none" alt="skyline" id="header-skyline"/>
+      <img src="https://bn1305files.storage.live.com/y4mk6P0-CjF7p8OQ8j6UI51kubMApzroNDpoFTDCGvO18Rqju1fHh4p87-yY1AMoohxzgZ4mG-6aPMeojIr1ZOe16VHxJk0WVRQcWLhO7OrOluzYWiBtqcbuyv5xyjL6BDqsUak8P4sIdRR_7Hm-WSHpnOXxVbAPFOP3QsAOKuAn9kfxaJ2cizlaU8_ZxVqjpWC?width=800&height=400&cropmode=none" alt="skyline" id="header-skyline"/>
+    
       <!--Opening Icon/Button-->
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fullSidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,64 +52,109 @@
   </div>
 
   <!--Header-->
-  <div class="jumbotron jumbotron-fluid text-center" id="header">
-    <!--Name of Location-->
-    <h1>Location name</h1>
-    <p>Address of Location</p>
-    <!--Background of Header -->
-    <img src="header_background.jpg" alt="header-bg">
-  </div>
-
   <!--Content-->
   <div class="container-fluid">
 
-    <!--Minimap-->
-    <div class="row">
-      <div class="col-sm-12" id="miniMap">
-        <img src="minimap.jpg" class="rounded img-fluid mx-auto d-block" alt="minimap">
+   <!--Minimap-->
+    <div class="row pt-3">
+      <div class="col-sm-7 text-center pt-5">
+        <body>
+        <h1 >Vanderbilt University</h1>
+          <h4>2201 West End Ave, Nashville, TN 37235</h4></body>
+        <img src="https://bn1305files.storage.live.com/y4m2osHuuw5-QAR3muDcSBcqKbJZlYBYiJyoY6_rUjiCjbSecgZLAy1yekIDBwAEPoGINE_QttxS7FmT04v70S5g-zNkY7Pr9X38D1QFFOtznZpzFTs_M-Rx9Ei31-0F7Ur0xP8FIYVxjT5uLHVUaQM5zEo4iWVe4IpVUyOghn62GkMdCuZObXYiMEv4dBR5QcC?width=1205&height=262&cropmode=none" scrolling="no"alt="vanderbilt campus" id="vanderbilt-campus" class="pt-3">
+         
+      </div>
+      <div class="col-sm-5">
+        
+        <div id="miniMap"> </div>
       </div>
     </div>
 
     <!--Section 1-->
+      <div class="row p-4 ">
+        
+    <div class="col-md-6" id="section1">
+      
     <div class="row">
-      <div class="col-sm-12" id="section1">
-        <h3> Section 1</h3>
-        <p>
-          A brief description of what the place is about and what is special about it
-        </p>
-        <img src="picture1.jpg" class="rounded img-fluid float-right" alt="picture1">
+      <div class="col-md-6">
+     <img src="https://bn1305files.storage.live.com/y4mFjjMWCjrQxWyMWLqCU57-ljphUPkFUE3UvnBLU3FzHanWVmHZbPOl-eCYa8amCu3_IjBpMYdpDctw5HdkcM8V0AcBvjNH4Ec77D5wbmCncA8d-y1LDKYVFNOC9jo4nta7FbD0xS9cvh9H6fRXCXTUnzTyIuqyAddif6pquyI4K9qxous4s5q4zTt_5mI9QKr?width=2048&height=1273&cropmode=none" class="img-fluid" alt="2017-2018 report on how Vaderbilt has reduced their emisions" id="facilities">
+        
       </div>
+      <div class="col-md-6">
+     <img src="https://bn1305files.storage.live.com/y4mRJ6Znz6qE66w5gHqGPrEVOaYx7vDIL44OLQ4IaCpHhx4hjobGH3JkH0o8a5SVr4-h6lGnQyOr_wy4KMy7pIuN3nZw0u4uAwzp0MTJi8F1oW3dnmbFXv0n-YnwEHW-BZne1xf1yJIBNnuyEhuG5rTUOhsrL4Woz5Uo56cJFU_tGhw3wixASn-zsOgPGtTGQJR?width=521&height=347&cropmode=none" class="pt-2"alt="childrens hospital" id="facilities">
+      </div>  
+        </div>
+        </div>
+    <div class="col-md-6 text-dark" id="section1">
+      <h2 class="text-center">History</h2>
+     <h4>
+         Vanderbilt has multiple facilities around the state of Tennessee. It was first established in 1873 and was originally known as Central University. The name “Vanderbilt” was later incorporated into the college when Cornelius Vanderbilt donated $1,000,000. Since then, Vanderbilt has grown by adding different departments throughout the years. It has also nurtured many well know people. 
+        </h4>
+        </div>
+      <div class="row pb-0">
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+        <h2> Past data of Carbon emissions  </h2>
+        <h4>
+         Between the years 2010 – 2019, data shows that Vanderbilt has reduced their emissions by over 30,000 metric tons! The most drastic change shown was between 2013 – 2015 when they dropped emissions by about 40,000 metric tons. Vanderbilt is on track to continue their decrease their emissions for the future.</h4>
+        </div>
+          <div class="col-md-5">
+          <img src="https://bn1305files.storage.live.com/y4mlkQaBcsePgWmAMhhJ7ZEavOitL8zR7XKA3Nelos5eDN-HRld6wKgq-McKVVRwLWaeqpWRdgXG-Q-WAiYSZ1meqfQjUQqxHyWpQk-yZ5yCH3Xhdli_UA0witiO1CgTzuFwk5pKwyPzfSdVDF-bp3HgWHZQrGhzA06e3kvvXm8I1isWFn0a0HWETYOtOW2rbfc?width=415&height=423&cropmode=none">
+          </div>
+        </div>
+        </div>
+        
+   
+        
+     <!--Section 2--> 
+                          <!--title of section--> 
+    <div class="row pt-4" id="event">
+      <div class="col-md-2"></div>
+      <div class="col-md-8" id="event-text">
+     <h1 id="event-text" class="p-2 bg-light text-center"> How Vanderbilt Has Limited Their Emissions</h1>
+   </div>
     </div>
-
-    <!--Section 2-->
-    <div class="row">
-      <div class="col-sm-12" id="section2">
-        <h3>Section 2</h3>
-        <p>
-          The CO2 levels over the course of time.
-        </p>
-        <img src="graph.jpg" class="rounded img-fluid float-left" alt="graph1">
-      </div>
-    </div>
-
-    <!--Mission-->
-    <div class="row">
-      <div class="clo-sm-12" id="mission">
-        <h3>Mission </h3>
-        <p>
-          The _____ levels over the course of time.
-        </p>
-      </div>
-    </div>
-
-    <!--Footer-->
-    <div class="row">
-      <div class="col-sm-12" id="footer">
-        This is the footer
-      </div>
-    </div>
+       
+                          <!--information-->
+ <div class="row pt-2 pb-4" id="event">
+  
+   <div class="row ml-2 pt-3 ml-4"><!--margin-->
+    <div class="col-md-5 align-self-center" id="section2">
+     <img src="https://bn1305files.storage.live.com/y4muF_vDLW7-L9LketyozkNa18gJP_KmC4GhRCQa93YqoW4x7Z82keAYZ6CkfjBvYlmr98vSGuw833y7_HmPwBlkkemKPX8th3XmLgKIB3hTw94sk5mlsui4s9eVm0u5Zg3g9fzJDYotoVToHJ3N9DhIaqc2PLpOFpHESNP18vPihUhK9Q-ezbqj-SX6tKBum63?width=3300&height=2144&cropmode=none" class="img-fluid bg-dark" alt="2017-2018 report on how Vanderbilt has reduced their emisions" id="report">
+      </div>  
+     
+     
+    <div class="col-md-3 text-light" id="section2">
+      <div class="row justify-content-start pb-5">
+         <div class="col-md-10 ">
+     <h4>This is the 2017-2018 Annual Sustainability Report that shows the different ways to reduce CO2 emissions not only on their campus but in other aspects as well.</h4>
+        
+        </div>
+        </div>
+  
+   
+     <div class="row pt-5">
+       <div class="col-md-0 pt-4">
+       </div>
+       <div class="col-md-11 text-end pt-5">
+         
+    <h4>Vanderbilt makes efforts to become carbon neutral ahead of their expected date starting this past spring</h4>
+       
+     </div>
+</div>
+     </div>
+       <div class="col-md-4 align-self-end" id="section3">
+       
+       <img src="https://bn1305files.storage.live.com/y4muZ1vuq93TQ4r2VxpOa9DIsiC2xCqXlevznNJBfHyftnbuEcZ_Gu5UPDeTaPbWDOFMOpufATmww_2UkSe71tWBtGSaQEtAaDIWWwxYGh6AjUz74RJtpHayGZl4HfUjsp6aH5uEnkJo6Pv8foSDSn_CqpKaCXyOwPghJOmeGRjHz2u51nW2Hn9VQyBOoVEBb1n?width=1600&height=900&cropmode=none" class="rounded img-fluid float-center " alt="Vanderbilt celebrating carbon neurality advancement to be achieved in the spring of 2021 instead of 2050" id= "neutrality">
+     
+   </div>
+   </div>
+ 
   </div>
-
+    </div>
+  
+  
+ 
   <!--Bootstrap JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
