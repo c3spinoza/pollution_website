@@ -55,7 +55,7 @@ body #fullSidebar #fullNavbar {
   height:80px;
 }
 /*Content*/
-#miniMap #section1 #section2  {
+#section1 #section2  {
   background-color: white;
 }
 /*PictureAttributes*/
@@ -70,7 +70,14 @@ body #fullSidebar #fullNavbar {
   width: 50%;
   padding: 5px;
 }
-
+/*MiniMap*/
+#miniMap {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 8px;
+  height: 400px;
+  width: 100%;
+} 
 /*Clear floats after image containers*/
 .image-row::after {
   content: "";
