@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
 /*Body Font*/
+
 body #fullSidebar #fullNavbar {
   font-family: "Roboto", sans-serif;
 }
@@ -31,8 +32,12 @@ body #fullSidebar #fullNavbar {
   padding-top: 4%;
   padding-bottom: 4%;
   text-align: center;
-  background: #eeeeee;
+  background: white;
   color: black;
+  z-index:2;
+}
+#headerpic {
+  z-index:1;
 }
 /*Icon picture and navigation bar size*/
 #header-image-container {
@@ -105,11 +110,28 @@ p {
   width: 100%;
 }
 #neutrality {
-  height: 300px;
+  height: 280px;
+  width: 497px;
+  border-radius: 75px; 
+ 
 }
 #report {
-  height: 500px;
+  height: 440px;
+  width: 640px;
+  border-radius: 25px;
+   
 }
-#myrow .event {
-  background color: yellow;
+#event {
+  background: rgba(216,171,77,0.8);
+}
+#event-text {
+  border-radius: 25px;
+  border: 2px solid white;
+ color: #d8ab4d; 
+}
+#facilities {
+  height: 90%;
+  width: 100%;
+  border-radius: 25px;
+ 
 }
