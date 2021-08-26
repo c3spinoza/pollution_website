@@ -1,1 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500"); 
+/*Body Font*/
+body #fullSidebar #fullNavbar {
+  font-family: "Roboto", sans-serif;
+} 
+/*Navbar and Sidebar */
+.navbar-custom {
+  background-color: #010101;
+  color: #a8a8a8;
+} 
+/*Sidebar Toggler Color*/
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(204,204,204, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} 
+/*Sidebar Options*/
+#fullSidebar a {
+  text-decoration: none;
+  font-size: 100%;
+  color: #a8a8a8;
+  display: block;
+  transition: 0.3s;
+  width: 30%;
+} 
+/*Text Color Change Animation of Options*/
+#fullSidebar a:hover {
+  color: #ffffff;
+} 
+/*Header*/
+#header {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background: #eeeeee;
+  color: black;
+} 
+/* Nashville Skyline Header Brand */
+#header-skyline {
+  height: 30%;
+  width: 20%;
+} 
 
+/*footer*/
+#footer {
+  font-size: 15px;
+  background-color: #bbbbbb;
+  color: #515150;
+}
