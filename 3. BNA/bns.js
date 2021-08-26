@@ -18,7 +18,9 @@
 
         //VU
           //Marker
-          var vu = L.marker([36.144444, -86.802778], opacity=0.5).addTo(miniMap);
+          var vu = L.marker([36.144444, -86.802778],{
+           opacity: 0.5
+          }).addTo(miniMap);
           //Pop-up
           vu.bindPopup("Vanderbilt University").openPopup();
           //link
@@ -28,8 +30,8 @@
       
         //BNA
           //Marker
-          var bna = L.marker([36.126111, -86.677222], {
-            riseOnHover: true
+          var bna = L.marker([36.126111, -86.677222],{
+           opacity: 0.5
           }).addTo(miniMap);
           //Pop-up
           bna.bindPopup("Nashville International Airport").openPopup();
@@ -40,7 +42,7 @@
       
         //MNDES
           //Marker
-          var mndes = L.marker([36.158056, -86.770278], opacity=0.5).addTo(miniMap);
+          var mndes = L.marker([36.158056, -86.770278]).addTo(miniMap);
           //Pop-up
           mndes.bindPopup("Metro Nashville District Energy System").openPopup(
           );
@@ -51,11 +53,12 @@
       
         //CGA
           //Marker
-          var cga = L.marker([36.181944, -86.873333], opacity=0.5).addTo(miniMap);
+          var cga = L.marker([36.181944, -86.873333],{
+           opacity: 0.5
+          }).addTo(miniMap);
           //Pop-up
           cga.bindPopup("Carlex Glass of America").openPopup();
           //Link
           cga.on("dblclick", function() {
             window.location.href = "cga.html";
           });
-
