@@ -1,76 +1,57 @@
-import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
-
-/*Global Styling*/
-* {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
-}
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500"); 
 /*Body Font*/
 body #fullSidebar #fullNavbar {
   font-family: "Roboto", sans-serif;
-}
-
+} 
 /*Navbar and Sidebar */
 .navbar-custom {
   background-color: #010101;
   color: #a8a8a8;
-}
+} 
 /*Sidebar Toggler Color*/
 .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(204,204,204, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
+} 
 /*Sidebar Options*/
 #fullSidebar a {
-  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #ffffff;
+  font-size: 100%;
+  color: #a8a8a8;
   display: block;
   transition: 0.3s;
-}
-/*Text Color Change Animation of Options Bootstrap*/
+  width: 30%;
+} 
+/*Text Color Change Animation of Options*/
 #fullSidebar a:hover {
-  color: #f1f1f1;
-}
+  color: #ffffff;
+} 
 /*Header*/
 #header {
   padding-top: 4%;
   padding-bottom: 4%;
-  background: #e2e2e2;
+  background: #eeeeee;
   color: black;
-}
-/*Icon picture and navigation bar size*/
-#header-image-container {
-  height: 80px;
-  width: auto;
-}
-
+} 
+/* Nashville Skyline Header Brand */
 #header-skyline {
-  height: inherit;
-  width: 180px;
-}
-/*Content*/
-#section1 #section2  {
+  height: 30%;
+  width: 20%;
+} 
+/*Context*/
+#context {
   background-color: white;
-}
-/*MiniMap*/
-#miniMap {
+} 
+/*Map*/
+#map {
   position: relative;
   border: 1px solid black;
   border-radius: 8px;
   height: 400px;
   width: 100%;
 } 
-/*Mission*/
-#mission {
-  background-color: #f1f1f1;
-}
-/*Footer*/
+/*footer*/
 #footer {
+  font-size: 15px;
   background-color: #bbbbbb;
-  color: #a8a8a8;
+  color: #515150;
 }
