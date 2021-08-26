@@ -54,13 +54,15 @@ body #fullSidebar #fullNavbar {
   width;180px;
   height:80px;
 }
-/*SourcesButtonColor*/
+/*SourcesButtonAttributes*/
 #sources button{
   background-color: black;
+  width: 1250px
 }
-/*SourcesListColor*/
+/*SourcesListAttributes*/
 #sources ul{
   background-color: black;
+  width: 1250px
 }
 /*Footer*/
 #footer {
