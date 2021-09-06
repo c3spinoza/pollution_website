@@ -1,4 +1,4 @@
- //Map
+//Map
 
         //Initialization of Map
         var miniMap = L.map('miniMap', {
