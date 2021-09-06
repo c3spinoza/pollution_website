@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <title>Nashville International Airport</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Stylesheet -->
+  <link rel="stylesheet" href="bna.css">
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  <!--Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+  <!--Leaflet JS-->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""> </script>
+</head>
+
+<body>
+  <!--Navagation Bar-->
+  <nav class="navbar navbar-custom" id="fullNavbar">
+    <div class="container-fluid">
+      <!--Navbar Brand-->
+      <img src="https://bn1305files.storage.live.com/y4mk6P0-CjF7p8OQ8j6UI51kubMApzroNDpoFTDCGvO18Rqju1fHh4p87-yY1AMoohxzgZ4mG-6aPMeojIr1ZOe16VHxJk0WVRQcWLhO7OrOluzYWiBtqcbuyv5xyjL6BDqsUak8P4sIdRR_7Hm-WSHpnOXxVbAPFOP3QsAOKuAn9kfxaJ2cizlaU8_ZxVqjpWC?width=660&height=330&cropmode=none" alt="skyline" id="header-skyline" />
+      <!--Opening Icon/Button-->
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fullSidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Side Bar -->
+  <div class="collapse navbar-collapse flex-column p-3 navbar-custom float-end" id="fullSidebar" style="width: 280px;">
+    <!--Options of Sidebar-->
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">Sources</a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">About</a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <!--Header-->
+  <div class="jumbotron jumbotron-fluid text-center" id="header">
+    <!--Name of Location-->
+    <h1>Nashville International Airport</h1>
+  </div>
+
+  <!--Content-->
+  <div class="container-fluid">
+    <!--Minimap-->
+    <div class="row">
+      <div class="col-sm-12">
+        <h5>Map of Nashville</h5>
+        <div id="miniMap"> </div>
+      </div>
+    </div>
+
+    <!--Section 1-->
+    <div class="row">
+      <div class="col-sm-12" id="section1">
+        <h2> Brief History</h2>
+        <p>
+          Nashville International Airport first opened in June 1937 with the name Berry Field in honor of Colonel Harry S. Berry. Colonel Berry was the state administrator of the Works Progress Administration (WPA), which was the government organization responsible for the construction of the airport (1)(2). When first built, Berry Field consisted of a terminal building, two hangers, a 4,000 feet concrete runway, and a flashing beacon on top of a 340-acre site located along what is now Murfreesboro Road (1)(2). The airport’s three-letter identifier, BNA, stands for Berry Field Nashville (2). </br>
+          </br>
+        <div class="card">
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.EDb9kcWbnhbJom3BkvSwVwHaFj%26pid%3DApi&f=1" class="card-img-top" alt="Berry Field Sign">
+          <div class="card-body">
+            <p class="card-text">Source: USA Today</p>
+          </div>
+        </div>
+        </br>
+
+        During World War II, the airport became the military base for the 4th Ferrying Command, which saw the airport increase in size to 1,500 acres (2). The rapid growth of air transportation during the 1950s and 1960s led to the creation of a new terminal and crosswind runway, along with an expansion to the existing runway (2). By 1977, Berry Field had increased to 3,300 acres with 3 runways and a renovated terminal (2). The expansion of the airport continued during the 1980s, with the opening of the JWN airport for small planes and the addition of a new terminal (2). In 1988, the airport's name, Berry Field, was replaced by Nashville International Airport (2). </br>
+        </br>
+
+
+ <div class="card" >
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.SyP8yYVVXsMx9dqOF1jGNwHaD4%26pid%3DApi&f=1" class="card-img-top" alt="Modern Nashville International Airport">
+          <div class="card-body">
+            <p class="card-text">Source: The Tennessean</p>
+          </div>
+        </div>
+        </br>
+
+        Nashville International Airport had other major terminal renovations in 2012, the same year that marked the 75th anniversary of the airport's opening (1). As of 2015, over 11 million passengers travel through the airport (3). The airport has daily arriving and departing flights to other parts of the United States, Canada, Mexico, Jamaica, and more recently England (1)(4).
+        </p>
+      </div>
+    </div>
+
+    <!--Section 2-->
+    <div class="row">
+      <div class="col-sm-12" id="section2">
+        <h2>Climatological Data Station
+        </h2>
+        <p>
+          Since January 1st, 1948, Nashville International Airport has served as a station for the National Oceanic and Atmospheric Administration (NOAA). The station has been collecting data on different meteorological parameters including temperature and precipitation. For instance, data of the temperature front the last 21 years appear to show increases in the annual averages for the maximum, average, and minimum temperatures (Figure 1). The interval from 2015-2021 appears to have a higher average temperature than the previous 14 years (2001-2014). Even though the increase between those two intervals is small, an average increase of 1℉ to 2℉ can still be significant and could give us an idea of what the weather of Nashville will be like in the future. </br>
+          </br>
+ <div class="card">
+          <img src="NOAA_AnnualData_Graph.svg" class="card-img-top" alt="Annual Average Temperatures Graph">
+          <div class="card-body">
+            <p class="card-text">Figure 1. Average annual maximum, average, and minimum temperatures from the National Oceanic and Atmospheric Administration (NOAA) station at Nashville International Airport for the last 22 years (2000-2021).</p>
+          </div>
+        </div>
+        </p>
+
+        <h3>Increase in Extreme Weather</h3>
+        <p>
+          It is difficult to assess exactly how climate change may be affecting the weather and meteorological events, but it is still possible to predict some of those climate events (5). For instance, the increase in temperature, like the ones observed in Figure 1, could increase the probability of more hot days and nights. This increase in temperature could also increase the chances of more extreme droughts (5). The latter may be supported by the increase in droughts in Georgia between the 1980s and the 2010s, although the study was not able to determine if climate change had any effect (6). Even though there are no studies with similar observations in Tennessee, it is still possible that similar events can occur in Tennessee as its climate is not so different from that of Georgia. Additionally, human-ignited fires are very common in the southeast, and even though they often cause less damage than other regions in the United States, the amount of land affected is still larger than naturally occurring fires (8)(9). So the increase of temperature and the possible increase in the likelihood of droughts could make Nashville, as well as Tennessee, more susceptible to more or larger human-caused wildfires. </br>
+          </br>
+
+          Similar to droughts, the temperature rise could lead to more water evaporating and an increased likelihood of rainfall (5). This also seems to be supported by the increase of floods in Georgia (6). In addition to extra rainfall, Tennessee could be affected more by tornadoes in the future as, in comparison to 1957-1983, Central Tennessee from 1984-2013 had the greatest increase in winter tornadoes with 56 and the greatest increase in spring tornadoes with 105 (7). That same study also found that there was an increase of significant (big or notable) winter tornadoes across Tennessee, and an increase of autumn tornadoes in Western Tennessee. Yet, they were also not able to connect their findings to the effects of climate change. On the other hand, the frequency of hurricane landfall and category 4 and 5 hurricanes seemed to have decreased (10)(11). Even though hurricanes usually reach Tennessee, and Nashville, in the form of storms or tropical storms, this decrease could mean that Nashville would be less likely to see rainfall and flooding related to hurricanes.
+        </p>
+
+        <h3>
+          Introduction or Increase of diseases</h3>
+        <p>
+          Furthermore, this increase in temperatures in Nashville and Tennessee could introduce new diseases as the ranges of their carriers, like mosquitos, increase. One study looking at the monthly data for Salmonella outbreaks in Mississippi, Tennessee, and Alabama between the years 2002 to 2011 found that there is a strong positive correlation between high temperatures and outbreaks of Salmonella (12). They also noticed an apparent strong effect of the increase in temperature and the increase of Salmonella outbreaks, and in which an increase of 1°F seemed to result in 4 infections or an increase of 3% of the average infection as of 2014. </br>
+          </br>
+
+          Yet, more serious problems would occur with the introduction or increase of vector-borne diseases. For instance, study models that account for future climate scenarios under climate change suggest that Nashville, TN could see as much as 50% in cases of Dengue fever during the summer as San Juan, Puerto Rico: a place known for having Dengue fever year-round (13). As dengue is spread through mostly mosquitos, an increase of human infections with dengue in the future could also mean a chance of mosquitoes being able to infect humans with other diseases like malaria and zika. Still, even if malaria or mosquito-borne diseases are able to infect humans in Tennessee, it is unlikely that they would cause outbreaks (13)(14)). Additionally, there could also be an introduction of Chagas disease in Nashville and the rest of Tennessee due to climate change making conditions more suitable for the survival and spreading of the disease (15). The Chagas disease accounts for 45,000 deaths and 10 million worldwide every year, and spreads through insects like wheel bugs, ambush bush, and kissing bugs (15).
+        </p>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="row">
+      <div class="col-sm-12" id="footer">
+        <h6> Fair Use Act Disclaimer</h6>
+        <p> This site is for educational purposes only. </br> </br> Copyright Disclaimer under section 107 of the Copyright Act of 1976, allowance is made for “fair use” for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research. </br>
+
+          </br>
+          This website may contain copyrighted material, the use of which may not have been specifically authorized by the copyright owner. Some material is made available in an effort to illustrate, transmit, and teach information regarding pollution and conservations effords occuring in Nashville, Tennessee. Some material contained in this website is distributed for research and educational purposes and for the public good.
+        <P>
+      </div>
+    </div>
+  </div>
+
+  <!--Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+
+</html>
