@@ -48,12 +48,6 @@ body #fullSidebar #fullNavbar {
   color: black;
 }
 
-/*Icon picture and navigation bar size*/
-#header-image-container {
-  height: 80px;
-  width: auto;
-}
-
 #header-skyline {
   height: inherit;
   width;180px;
