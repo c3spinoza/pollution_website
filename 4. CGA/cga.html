@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <title>Location Name</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  <!--Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+  <!--Leaflet JS-->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""> </script>
+</head>
+
+<body>
+  <!--Navagation Bar-->
+  <nav class="navbar navbar-custom" id="fullNavbar">
+    <div class="container-fluid">
+      <!--Navbar Brand-->
+      <img src="https://bn1305files.storage.live.com/y4mk6P0-CjF7p8OQ8j6UI51kubMApzroNDpoFTDCGvO18Rqju1fHh4p87-yY1AMoohxzgZ4mG-6aPMeojIr1ZOe16VHxJk0WVRQcWLhO7OrOluzYWiBtqcbuyv5xyjL6BDqsUak8P4sIdRR_7Hm-WSHpnOXxVbAPFOP3QsAOKuAn9kfxaJ2cizlaU8_ZxVqjpWC?width=660&height=330&cropmode=none" alt="skyline" id="header-skyline" />
+      <!--Opening Icon/Button-->
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fullSidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Side Bar -->
+  <div class="collapse navbar-collapse flex-column p-3 navbar-custom float-end" id="fullSidebar" style="width: 280px;">
+    <!--Options of Sidebar-->
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">Sources</a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">About</a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <!--Header-->
+  <div class="jumbotron jumbotron-fluid text-center" id="header">
+    <!--Name of Location-->
+    <h1>Carlex Glass America</h1>
+    <p>7200 Centennial Blvd, Nashville, TN 37209</p>
+  </div>
+
+  <!--Content-->
+  <div class="container-fluid">
+
+    <!--Minimap-->
+    <div class="row">
+      <div class="col-sm-12">
+        <h5>Map of Nashville</h5>
+        <div id="miniMap"> </div>
+      </div>
+    </div>
+
+    <!--Section 1-->
+    <div class="row">
+      <div class="col-sm-12" id="section1">
+        <h3>The History of CGA</h3>
+        <p>
+          Carlex Glass America is a glass plant that produces automotive glass, such as windshields, as protection for vehicles. The company was first established in Japan, launching its glass business in 1958 there. Additionally, it first established a facility in North America in 1974 in Seattle, Washington, and the first Tennessee facility was launched in Vonore in 1991, in partnership with the Ford Motor Company. In 2011, it purchased Ford’s former float glass facility in Nashville, Tennessee. Right now, Carlex currently has 10 automotive glass locations in countries including the U.S., Europe, and Asia [1]. </br> </br>
+          Sources: </br>
+          [1] <a href="https://www.carlex.com/about/"> About Carlex </a>
+
+        </p>
+      </div>
+    </div>
+
+    <!--Section 2-->
+    <div class="row">
+      <div class="col-sm-12" id="section2">
+        <h3>Effects of the Overall Trends of Methane/Nitrous Oxide Releases</h3>
+        <p>
+          From 2010-2019, the emission levels of CO2e (“the amount of CO2 which would have the equivalent global warming impact” [1]) for Carlex Glass America have been relatively flat over most of the past decade, staying at around 90-100k metric tons in CO2e. The good thing about Carlex Glass America is that its methane and nitrous oxide emissions are less than 0.08% of its total emissions, which would be considered low. [2]. However, unfortunately, methane and nitrous oxide emission levels globally are much higher than those shown from CGA. According to the Environmental Protection Agency, global activities after the industrial revolution have already caused methane levels to more than double and nitrous oxide levels to increase by 15% [3]. </br>
+
+          </br>
+          <img src="https://www.science.org.au/curious/sites/default/files/images/earth-and-environment/methane/ipcc-faq-2-1-figure-1-l.png" width="400" height="300" alt="picture1">
+          </br> [4]. </br> </br>
+          Methane alone has been discovered to be 30 times as strong as carbon dioxide in producing greenhouse gas effects [4]. As a result, methane and nitrous oxide emission levels have made significant impacts in not only the world overall but also locally in the state of Tennessee and even Nashville where we live. Since the 20th century, the average temperature in Nashville has already increased by almost 1 degree Fahrenheit, and rainfall has increased by 10% in Tennessee [3]. It is projected that over the next century, temperatures may increase up to 6 degrees Fahrenheit, and precipitation levels may increase by up to 30% (varying by season). A few degrees of temperature increase might not sound like a lot, but this increase is projected to cause heat death numbers to increase by 60% in parts of Tennessee, such as in Memphis. Additionally, warming could cause disease-carrying insects (that, for example, could spread malaria or dengue fever) to start living in habitats where such diseases were previously not naturally occurring. In another aspect of these impacts, warming can also cause higher water temperatures, which would degrade overall water quality and reduce the effectiveness of industrial cooling systems [3]. As all of these changes directly affect Nashville and other parts of Tennessee, it is apparent that these impacts will directly and negatively affect our future everyday lives and ways of living. We will each need to take active steps to help reduce our increase in methane levels and these impacts. </br>
+          </br>
+          Sources: </br>
+          [1]
+          <a href="https://ecometrica.com/assets/GHGs-CO2-CO2e-and-Carbon-What-Do-These-Mean-v2.1.pdf"> Gas Emission Terms </a> </br>
+          [2]
+          <a href="https://ghgdata.epa.gov/ghgp/service/facilityDetail/2011?id=1004724&ds=E&et=&popup=true"> Info About CGA Emissions </a> </br>
+          [3]
+          <a href="https://nepis.epa.gov/Exe/ZyNET.exe/P1006PA7.txt?ZyActionD=ZyDocument&Client=EPA&Index=1995%20Thru%201999&Docs=&Query=&Time
+=&EndTime=&SearchMethod=1&TocRestrict=n&Toc=&TocEntry=&QField=&QFieldYear=
+&QFieldMonth=&QFieldDay=&UseQField=&IntQFieldOp=0&ExtQFieldOp=0&XmlQuery=
+&File=D%3A%5CZYFILES%5CINDEX%20DATA%5C95THRU99%5CTXT%5C00000025
+%5CP1006PA7.txt&User=ANONYMOUS&Password=anonymous&SortMethod=h%7C-&MaximumDocuments=1&FuzzyDegree=0&ImageQuality=r75g8/r75g8/x150y150g16/i425&Display
+=hpfr&DefSeekPage=x&SearchBack=ZyActionL&Back=ZyActionS&BackDesc=Results%20page&MaximumPages=1&ZyEntry=1"> Climate Change and Tennessee, EPA </a> </br>
+          [4]
+          <a href="https://www.science.org.au/curious/earth-environment/methane"> The Problem with Methane </a>
+
+        </p>
+      </div>
+    </div>
+
+    <!--Mission-->
+    <div class="row">
+      <div class="clo-sm-12" id="mission">
+        <h3>Mission </h3>
+        <p>
+          The _____ levels over the course of time.
+        </p>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="row">
+      <div class="col-sm-12" id="footer">
+        This is the footer
+      </div>
+    </div>
+  </div>
+
+  <!--Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+
+</html>
