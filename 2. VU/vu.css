@@ -43,6 +43,13 @@ body #fullSidebar #fullNavbar {
   width;180px;
   height:80px;
 }
+/*progress bar*/
+#progress {
+  width: 50%;
+  aria-valuemin:50;
+  aria-valuemax:100;
+  aria-valuenow:75;
+}
 /*Context*/
 #context {
   background-color: white;
