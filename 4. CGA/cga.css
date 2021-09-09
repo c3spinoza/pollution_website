@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
+import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
 
 /*Global Styling*/
 * {
@@ -40,27 +40,20 @@ body #fullSidebar #fullNavbar {
 #header {
   padding-top: 4%;
   padding-bottom: 4%;
-  
+  background: #e2e2e2;
   color: black;
 }
-/*Icon picture and navigation bar size*/
-#header-image-container {
-  height: 80px;
-  width: auto;
-}
-
 #header-skyline {
   height: inherit;
-  width;180px;
-  height:80px;
+  width: 180px;
 }
 /*progress bar*/
 #progress {
-  width: 5%;
-  aria-valuemin:5;
+  width: 100%;
+  aria-valuemin:100;
   aria-valuemax:100;
   aria-valuenow:75;
-  color: #e56762;
+  color: #0397d7;
 }
 /*MiniMap*/
 #miniMap {
@@ -74,12 +67,9 @@ body #fullSidebar #fullNavbar {
 #section1 #section2  {
   background-color: white;
 }
-/*Mission*/
-#mission {
-  background-color: #f1f1f1;
-}
 /*Footer*/
 #footer {
+  font-size: 15px;
   background-color: #bbbbbb;
-  color: #a8a8a8;
+  color: #515150;
 }
