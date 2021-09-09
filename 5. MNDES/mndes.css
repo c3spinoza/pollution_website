@@ -40,7 +40,6 @@ body #fullSidebar #fullNavbar {
 #header {
   padding-top: 4%;
   padding-bottom: 4%;
-  background: #e2e2e2;
   color: black;
 }
 /*Icon picture and navigation bar size*/
@@ -54,6 +53,13 @@ body #fullSidebar #fullNavbar {
   width;180px;
   height:80px;
 }
+/*progress bar*/
+#progress{
+  width: 75%;
+  aria-valuemin:75;
+  aria-valuemax:100;
+  aria-valuenow:75;
+ }
 /*Content*/
 #section1 #section2  {
   background-color: white;

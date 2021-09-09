@@ -47,6 +47,14 @@ body #fullSidebar #fullNavbar {
   height: inherit;
   width: 180px;
 }
+/*progress bar*/
+#progress {
+  width: 100%;
+  aria-valuemin:100;
+  aria-valuemax:100;
+  aria-valuenow:75;
+  color: #0397d7;
+}
 /*MiniMap*/
 #miniMap {
   position: relative;
