@@ -1,3 +1,4 @@
+  
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
 
 /*Global Styling*/
@@ -40,8 +41,7 @@ body #fullSidebar #fullNavbar {
 #header {
   padding-top: 4%;
   padding-bottom: 4%;
-  background: #e2e2e2;
-  color: black;
+   color: black;
 }
 /*Icon picture and navigation bar size*/
 #header-image-container {
@@ -57,12 +57,12 @@ body #fullSidebar #fullNavbar {
 /*SourcesButtonAttributes*/
 #sources button{
   background-color: black;
-  width: 1250px
+  width: 100%;
 }
 /*SourcesListAttributes*/
 #sources ul{
   background-color: black;
-  width: 1250px
+  width: 100%;
 }
 /*Footer*/
 #footer {
