@@ -25,25 +25,25 @@ body #fullSidebar #fullNavbar {
 #fullSidebar a:hover {
   color: #ffffff;
 } 
+/* Nashville Skyline Header Brand */
+#header-skyline {
+  position: inherit;
+  width;180px;
+  height:80px;
+}
 /*Header*/
 #header {
   padding-top: 4%;
   padding-bottom: 4%;
   color: black;
 } 
-/* Nashville Skyline Header Brand */
-#header-skyline {
-  height: inherit;
-  width;180px;
-  height:80px;
-}
 /*Context*/
 #context {
-  background-color: white;
+  background-color:  #ffffff;
 } 
 
-/*MiniMap*/
-#miniMap {
+/*Map*/
+#map {
   position: relative;
   border: 1px solid black;
   border-radius: 8px;
@@ -52,7 +52,7 @@ body #fullSidebar #fullNavbar {
 } 
 /*footer*/
 #footer {
-  font-size: 15px;
+  font-size: 80%;
   background-color: #eeeee;
   color: #515150;
 }
