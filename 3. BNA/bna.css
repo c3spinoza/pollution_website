@@ -50,9 +50,9 @@ body #fullSidebar #fullNavbar {
 /*progress bar*/
 #progress {
   width: 100%;
-  aria-valuemin:100;
-  aria-valuemax:100;
-  aria-valuenow:75;
+  aria-valuemin: 100;
+  aria-valuemax: 100;
+  aria-valuenow: 75;
   color: #0397d7;
 }
 /*MiniMap*/
@@ -62,14 +62,14 @@ body #fullSidebar #fullNavbar {
   border-radius: 8px;
   height: 400px;
   width: 100%;
-} 
+}
 /*Content*/
-#section1 #section2  {
+#section1 #section2 {
   background-color: white;
 }
 /*Footer*/
 #footer {
-  font-size: 15px;
+  font-size: 5px;
   background-color: #bbbbbb;
   color: #515150;
 }
