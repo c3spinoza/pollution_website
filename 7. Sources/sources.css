@@ -27,7 +27,7 @@ body #fullSidebar #fullNavbar {
 #fullSidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 15px;
   color: #ffffff;
   display: block;
   transition: 0.3s;
@@ -66,6 +66,7 @@ body #fullSidebar #fullNavbar {
 }
 /*Footer*/
 #footer {
+  font-size: 5px;
   background-color: #bbbbbb;
-  color: #a8a8a8;
+  color: #515150;
 }
