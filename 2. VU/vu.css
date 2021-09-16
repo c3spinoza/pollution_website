@@ -22,36 +22,23 @@ body #fullSidebar #fullNavbar {
   display: block;
   transition: 0.3s;
   width: 30%;
-} 
+}
 /*Text Color Change Animation of Options*/
 #fullSidebar a:hover {
   color: #ffffff;
 }
-/*Header*/
-#header-text {
-  background: white;
-  border-radius: 25px;
-  border: 2px solid black;
- color: #d8ab4d; 
- 
-}
-/*Icon picture and navigation bar size*/
-
+/*Nashville Skyline in Navbar*/
 #header-skyline {
-  height: inherit;
-  width;180px;
-  height:80px;
+  position: inherit;
+  width: 180px;
+  height: 80px;
 }
 /*progress bar*/
 #progress {
   width: 50%;
-  aria-valuemin:50;
-  aria-valuemax:100;
-  aria-valuenow:75;
-}
-/*Context*/
-#context {
-  background-color: white;
+  aria-valuemin: 50;
+  aria-valuemax: 100;
+  aria-valuenow: 75;
 }
 /*MiniMap*/
 #miniMap {
@@ -60,15 +47,7 @@ body #fullSidebar #fullNavbar {
   border-radius: 8px;
   height: 400px;
   width: 100%;
-} 
-.nashville {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 400px;
-  height: 379px;
 }
-
 #campus {
   height: 1000px;
 }
@@ -76,7 +55,7 @@ p {
   font-size: large;
 }
 #vanderbilt-campus {
-    height: 70%;
+  height: 70%;
   width: 100%;
   border-radius: 55px;
 }
@@ -87,21 +66,21 @@ p {
 #neutrality {
   height: 100%;
   width: 100%;
-  border-radius: 55px; 
- 
+  border-radius: 55px;
+
 }
 #report {
   height: 100%;
   width: 100%;
   border-radius: 25px;
-   }
+}
 #event {
-  background: rgba(216,171,77,0.8);
+  background: #d8ab4d;
 }
 #event-text {
   border-radius: 25px;
   border: 2px solid white;
- color: #d8ab4d; 
+  color: #d8ab4d;
 }
 #facilities {
   height: 90%;
