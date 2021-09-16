@@ -13,9 +13,9 @@ L.tileLayer(
     zoomOffset: -1,
     id: "mapbox/streets-v11",
     attribution:
-      'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox/">Mapbox</a>',
+    'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox/">Mapbox</a>',
     accessToken:
-      "pk.eyJ1IjoidGFsbGlhYmxlLXNvY2lldG9sb2d5IiwiYSI6ImNrcmF2ODlkcjNpY3YycnJ4OTR6eWVhNmEifQ.wIwj4TNBBVeScPzezR5I0g"
+    "pk.eyJ1IjoidGFsbGlhYmxlLXNvY2lldG9sb2d5IiwiYSI6ImNrcmF2ODlkcjNpY3YycnJ4OTR6eWVhNmEifQ.wIwj4TNBBVeScPzezR5I0g"
   }
 ).addTo(miniMap);
 
@@ -66,4 +66,3 @@ cga.bindPopup("Carlex Glass of America").openPopup();
 cga.on("dblclick", function () {
   window.location.href = "cga.html";
 });
-
