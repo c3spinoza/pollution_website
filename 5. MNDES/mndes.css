@@ -49,8 +49,8 @@ body #fullSidebar #fullNavbar {
 }
 
 #header-skyline {
-  height: inherit;
-  width;180px;
+  position: inherit;
+  width:180px;
   height:80px;
 }
 /*progress bar*/
@@ -65,7 +65,7 @@ body #fullSidebar #fullNavbar {
   background-color: white;
 }
 /*PictureAttributes*/
-#pics img{
+#pictures img{
   border-radius:20px;
   max-width: 100%;
   height: 450px;
