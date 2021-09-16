@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500"); 
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
 /*Body Font*/
 body #fullSidebar #fullNavbar {
   font-family: "Roboto", sans-serif;
-} 
+}
 /*Navbar and Sidebar */
 .navbar-custom {
   background-color: #010101;
   color: #a8a8a8;
-} 
+}
 /*Sidebar Toggler Color*/
 .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(204,204,204, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-} 
+}
 /*Sidebar Options*/
 #fullSidebar a {
   text-decoration: none;
@@ -20,27 +20,27 @@ body #fullSidebar #fullNavbar {
   display: block;
   transition: 0.3s;
   width: 30%;
-} 
+}
 /*Text Color Change Animation of Options*/
 #fullSidebar a:hover {
   color: #ffffff;
-} 
+}
 /* Nashville Skyline Header Brand */
 #header-skyline {
   position: inherit;
-  width;180px;
-  height:80px;
+  width: 180px;
+  height: 80px;
 }
 /*Header*/
 #header {
   padding-top: 4%;
   padding-bottom: 4%;
   color: black;
-} 
+}
 /*Context*/
 #context {
-  background-color:  #ffffff;
-} 
+  background-color: #ffffff;
+}
 
 /*Map*/
 #map {
@@ -49,7 +49,7 @@ body #fullSidebar #fullNavbar {
   border-radius: 8px;
   height: 400px;
   width: 100%;
-} 
+}
 /*footer*/
 #footer {
   font-size: 80%;
