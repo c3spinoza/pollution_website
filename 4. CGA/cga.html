@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
   <title>Location Name</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -13,7 +10,7 @@
   <!--Bootstrap Icons-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
   <!--Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
   <!--Leaflet JS-->
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="">
   </script>
@@ -24,14 +21,14 @@
   <nav class="navbar navbar-custom" id="fullNavbar">
     <div class="container-fluid">
       <!--Skyline Icon-->
-      <img src="https://bn1305files.storage.live.com/y4mk6P0-CjF7p8OQ8j6UI51kubMApzroNDpoFTDCGvO18Rqju1fHh4p87-yY1AMoohxzgZ4mG-6aPMeojIr1ZOe16VHxJk0WVRQcWLhO7OrOluzYWiBtqcbuyv5xyjL6BDqsUak8P4sIdRR_7Hm-WSHpnOXxVbAPFOP3QsAOKuAn9kfxaJ2cizlaU8_ZxVqjpWC?width=660&height=330&cropmode=none" alt="skyline" id="header-skyline" />
+      <img src="https://bn1305files.storage.live.com/y4mk6P0-CjF7p8OQ8j6UI51kubMApzroNDpoFTDCGvO18Rqju1fHh4p87-yY1AMoohxzgZ4mG-6aPMeojIr1ZOe16VHxJk0WVRQcWLhO7OrOluzYWiBtqcbuyv5xyjL6BDqsUak8P4sIdRR_7Hm-WSHpnOXxVbAPFOP3QsAOKuAn9kfxaJ2cizlaU8_ZxVqjpWC?width=660&amp;height=330&amp;cropmode=none" alt="skyline" id="header-skyline">
       <!--Opening Icon/Button-->
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fullSidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <!-- Side Bar -->
       <div class="collapse navbar-collapse flex-column p-3 navbar-custom float-end" id="fullSidebar">
         <!--Options of Sidebar-->
         <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-          <li> <a href="home/home.html" class="nav-link">Home</a> </li>
+          <li> <a href="home.html" class="nav-link">Home</a> </li>
           <li> <a href="sources.html" class="nav-link">Sources</a> </li>
           <li> <a href="ac.html" class="nav-link">Action Steps</a> </li>
           
@@ -66,8 +63,8 @@
   <div class="row">
     <div class="col-sm-12">
       <h5>Map of Nashville</h5>
-      <div id="miniMap">
-      </div>
+      <div id="miniMap" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0">
+      <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/10/264/401?access_token=pk.eyJ1IjoidGFsbGlhYmxlLXNvY2lldG9sb2d5IiwiYSI6ImNrcmF2ODlkcjNpY3YycnJ4OTR6eWVhNmEifQ.wIwj4TNBBVeScPzezR5I0g" class="leaflet-tile leaflet-tile-loaded" style="width: 512px; height: 512px; transform: translate3d(63px, -55px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/10/265/401?access_token=pk.eyJ1IjoidGFsbGlhYmxlLXNvY2lldG9sb2d5IiwiYSI6ImNrcmF2ODlkcjNpY3YycnJ4OTR6eWVhNmEifQ.wIwj4TNBBVeScPzezR5I0g" class="leaflet-tile leaflet-tile-loaded" style="width: 512px; height: 512px; transform: translate3d(575px, -55px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/10/263/401?access_token=pk.eyJ1IjoidGFsbGlhYmxlLXNvY2lldG9sb2d5IiwiYSI6ImNrcmF2ODlkcjNpY3YycnJ4OTR6eWVhNmEifQ.wIwj4TNBBVeScPzezR5I0g" class="leaflet-tile leaflet-tile-loaded" style="width: 512px; height: 512px; transform: translate3d(-449px, -55px, 0px); opacity: 1;"><img alt="" role="presentation" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/10/266/401?access_token=pk.eyJ1IjoidGFsbGlhYmxlLXNvY2lldG9sb2d5IiwiYSI6ImNrcmF2ODlkcjNpY3YycnJ4OTR6eWVhNmEifQ.wIwj4TNBBVeScPzezR5I0g" class="leaflet-tile leaflet-tile-loaded" style="width: 512px; height: 512px; transform: translate3d(1087px, -55px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"><img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; opacity: 0.5; transform: translate3d(623px, 253px, 0px);"><img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; opacity: 0.5; transform: translate3d(806px, 286px, 0px);"><img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; opacity: 0.5; transform: translate3d(671px, 229px, 0px);"><img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(521px, 186px, 0px);"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"><img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; opacity: 0.5; transform: translate3d(623px, 253px, 0px); z-index: 253;"><img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; opacity: 0.5; transform: translate3d(806px, 286px, 0px); z-index: 286;"><img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; opacity: 0.5; transform: translate3d(671px, 229px, 0px); z-index: 229;"><img src="https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(521px, 186px, 0px); z-index: 186;"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"><div class="leaflet-popup  leaflet-zoom-animated" style="opacity: 1; transform: translate3d(522px, 152px, 0px); bottom: -7px; left: -85px;"><div class="leaflet-popup-content-wrapper"><div class="leaflet-popup-content" style="width: 130px;">Carlex Glass of America</div></div><div class="leaflet-popup-tip-container"><div class="leaflet-popup-tip"></div></div><a class="leaflet-popup-close-button" href="#close">×</a></div></div><div class="leaflet-proxy leaflet-zoom-animated"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox/">Mapbox</a></div></div></div></div>
     </div>
   </div>
 
@@ -95,15 +92,15 @@
     </div>
   </div>
       
-   <!--Next/back buttons-->
-    <div class="row pb-3">
+     <!--Next/back buttons-->
+    <div class="row">
       <div class="col-sm-6">
         <!--back button-->
-        <a href="home.html" class="btn btn-lg text-white" id="buttons"> &#8592; Back</a>
+        <a href="home.html" class="btn btn-warning btn-lg text-white"> ← Back</a>
       </div>
       <!--next button-->
       <div class="col-sm-6 text-end">
-        <a href="vu.html" class="btn btn-lg text-white" id="buttons"> Next &#8594;</a>
+        <a href="vu.html" class="btn btn-warning btn-lg text-white"> Next →</a>
       </div>
     </div>
 
@@ -123,12 +120,13 @@
         </div>
       </div>
       
-    </div>
+    
 
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <!--JS-->
     <script src="cga.js"></script>
-  </body>
+  
 
-</html>
+
+</body></html>
