@@ -64,18 +64,7 @@ body #fullSidebar #fullNavbar {
 #section1 #section2  {
   background-color: white;
 }
-/*PictureAttributes*/
-#pictures img{
-  border-radius:20px;
-  max-width: 100%;
-  height: 450px;
-}
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
+
 /*MiniMap*/
 #miniMap {
   position: relative;
@@ -84,11 +73,18 @@ body #fullSidebar #fullNavbar {
   height: 400px;
   width: 100%;
 } 
-/*Clear floats after image containers*/
-.image-row::after {
-  content: "";
-  clear: both;
-  display: table;
+/*PictureAttributes*/
+#pictures img{
+  border-radius:20px;
+  max-width: 100%;
+  height: 450px;
+}
+
+#NTTC-card{
+  border-radius:20px;
+}
+#MNDES-card {
+  border-radius:20px;
 }
 /*Mission*/
 #mission {
