@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
+
+/*Global Styling*/
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
 /*Body Font*/
 body #fullSidebar #fullNavbar {
   font-family: "Roboto", sans-serif;
 }
+
 /*Navbar and Sidebar */
 .navbar-custom {
   background-color: #010101;
@@ -14,22 +25,16 @@ body #fullSidebar #fullNavbar {
 }
 /*Sidebar Options*/
 #fullSidebar a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 100%;
-  color: #a8a8a8;
+  font-size: 15px;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
-  width: 30%;
 }
-/*Text Color Change Animation of Options*/
+/*Text Color Change Animation of Options Bootstrap*/
 #fullSidebar a:hover {
-  color: #ffffff;
-}
-/* Nashville Skyline Header Brand */
-#header-skyline {
-  position: inherit;
-  width: 180px;
-  height: 80px;
+  color: #f1f1f1;
 }
 /*Header*/
 #header {
@@ -37,22 +42,56 @@ body #fullSidebar #fullNavbar {
   padding-bottom: 4%;
   color: black;
 }
-/*Context*/
-#context {
-  background-color: #ffffff;
+/*Icon picture and navigation bar size*/
+#header-image-container {
+  height: 80px;
+  width: auto;
 }
 
-/*Map*/
-#map {
+#header-skyline {
+  position: inherit;
+  width:180px;
+  height:80px;
+}
+/*progress bar*/
+#progress{
+  width: 75%;
+  aria-valuemin:75;
+  aria-valuemax:100;
+  aria-valuenow:75;
+ }
+/*Content*/
+#section1 #section2  {
+  background-color: white;
+}
+
+/*MiniMap*/
+#miniMap {
   position: relative;
   border: 1px solid black;
   border-radius: 8px;
   height: 400px;
   width: 100%;
+} 
+/*PictureAttributes*/
+#pictures img{
+  border-radius:20px;
+  max-width: 100%;
+  height: 450px;
 }
-/*footer*/
+
+#NTTC-card{
+  border-radius:20px;
+}
+#MNDES-card {
+  border-radius:20px;
+}
+/*Mission*/
+#mission {
+  background-color: #f1f1f1;
+}
+/*Footer*/
 #footer {
-  font-size: 80%;
-  background-color: #eeeee;
+  background-color: #bbbbbb;
   color: #515150;
 }
