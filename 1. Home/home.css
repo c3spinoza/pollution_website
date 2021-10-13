@@ -50,9 +50,8 @@ body #fullSidebar #fullNavbar {
   height: 400px;
   width: 100%;
 }
-/*footer*/
+/*Footer*/
 #footer {
-  font-size: 80%;
-  background-color: #eeeee;
+  background-color: #bbbbbb;
   color: #515150;
 }
