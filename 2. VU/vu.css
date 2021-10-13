@@ -87,3 +87,9 @@ p {
   width: 100%;
   border-radius: 25px;
 }
+/*Footer*/
+#footer {
+  font-size: 15px;
+  background-color: #bbbbbb;
+  color: #515150;
+}
