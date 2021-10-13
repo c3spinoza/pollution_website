@@ -18,9 +18,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 //VU
 //Marker
-var vu = L.marker([36.144444, -86.802778], {
-  opacity: 0.5
-}).addTo(nashvilleMap);
+var vu = L.marker([36.144444, -86.802778], {opacity: 0.5}).addTo(nashvilleMap);
 //Pop-up
 vu.bindPopup("Vanderbilt University").openPopup();
 //link
@@ -30,9 +28,7 @@ vu.on("dblclick", function() {
 
 //BNA
 //Marker
-var bna = L.marker([36.126111, -86.677222], {
-  opacity: 0.5
-}).addTo(nashvilleMap);
+var bna = L.marker([36.126111, -86.677222]).addTo(nashvilleMap);
 //Pop-up
 bna.bindPopup("Nashville International Airport").openPopup();
 //Link
@@ -42,7 +38,7 @@ bna.on("dblclick", function() {
 
 //MNDES
 //Marker
-var mndes = L.marker([36.158056, -86.770278]).addTo(nashvilleMap);
+var mndes = L.marker([36.158056, -86.770278], {opacity: 0.5}).addTo(nashvilleMap);
 //Pop-up
 mndes.bindPopup("Metro Nashville District Energy System").openPopup();
 //Link
@@ -52,9 +48,7 @@ mndes.on("dblclick", function() {
 
 //CGA
 //Marker
-var cga = L.marker([36.181944, -86.873333], {
-  opacity: 0.5
-}).addTo(nashvilleMap);
+var cga = L.marker([36.181944, -86.873333], {opacity: 0.5}).addTo(nashvilleMap);
 //Pop-up
 cga.bindPopup("Carlex Glass of America").openPopup();
 //Link
